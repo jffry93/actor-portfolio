@@ -1,0 +1,84 @@
+/*============= MEDIA QUERIES =============*/
+
+
+/* Devices over 1650px (xl) */
+
+@media (min-width: 1400px) {}
+
+
+/* Devices under 1199px (xl) */
+
+@media (min-width: 991.98px) {
+    .headshot-heading {
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+        }
+    }
+}
+
+
+/* Devices under 992px (md) */
+
+@media (max-width: 991.98px) {
+    .navbar .fa-bars {
+        font-size: 1.5rem;
+    }
+    .btn-lg {
+        font-size: .95rem;
+    }
+    .headshot-heading {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+
+/* Devices under 420px (md) */
+
+@media (max-width: 450px) {
+    .top-bar a {
+        font-size: 1.3rem;
+    }
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    .headshot-container {
+        padding-top: 10px!important;
+        h1 {
+            font-size: 1.8rem!important;
+            font-weight: 800;
+        }
+        img {
+            max-height: 1500px;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+        a {
+            position: relative;
+            font-size: 1rem!important;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .top-bar a {
+        font-size: 1.2rem;
+    }
+    .navbar .fa-bars {
+        font-size: 1.2rem;
+    }
+    .navbar-brand {
+        font-size: .8rem;
+    }
+}
+
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+
+.row,
+.container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}

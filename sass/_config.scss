@@ -1,0 +1,44 @@
+$primary-color: #de3333;
+
+/*--This effects all btn-lg buttons on the page--*/
+
+.btn {
+    border-radius: 0rem;
+}
+
+.btn-lg {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-width: medium;
+}
+
+.btn-secondary {
+    background-color: #de3333;
+    border: .1rem solid #de3333;
+}
+
+.btn-primary {
+    background-color: #116466;
+    border: .05rem solid #116466;
+}
+
+.btn-primary:hover {
+    background-color: #1c7274;
+    border: .05rem solid #1c7274;
+}
+
+.btn-primary:focus {
+    background-color: #1c7274!important;
+    border: .1rem solid #1c7274!important;
+}
+
+.btn-secondary:hover {
+    background-color: #de3333;
+    border: .05rem solid #de3333;
+}
+
+.btn-secondary:focus {
+    background-color: #de3333!important;
+    border: .1rem solid #fff;
+}

@@ -1,0 +1,51 @@
+        @import 'config.scss';
+        @import 'navbar.scss';
+        @import 'socialBar.scss';
+        @import 'mobile';
+        body {
+            height: 100vh;
+            overflow-x: hidden;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            background: black;
+        }
+        
+        .headshot-container {
+            position: relative;
+            top: 5rem;
+            h1 {
+                font-size: 3.3rem;
+                font-weight: 800;
+                .threat {
+                    color: #de3333;
+                    ;
+                }
+            }
+            img {
+                max-height: 100vh;
+                object-fit: cover;
+                border: 3px solid white;
+            }
+            a {
+                position: relative;
+                font-size: 1.5rem;
+            }
+        }
+        
+        .resume-container-bg {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 7%);
+            height: 100vh;
+            background: #ed3333!important;
+            h1 {
+                font-size: 3rem;
+            }
+        }
+        
+        .resume-container {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 5%);
+            background: white!important;
+        }
