@@ -1,11 +1,16 @@
 footer {
     background-color: #383838;
     padding: 1rem 2rem 3rem;
-}
-
-footer img {
-    height: 3.5rem;
-    margin: 1.5rem auto;
+    img {
+        height: 5rem;
+        margin: 1.5rem auto;
+    }
+    h3 {
+        font-weight: 800;
+    }
+    h4 {
+        color: #ed3333;
+    }
 }
 
 footer p,
@@ -17,18 +22,20 @@ footer a,
 
 ul.social {
     list-style-type: none;
-    display: flex;
     max-width: 16rem;
     margin: 0 auto;
     padding: 0;
-}
-
-ul.social li {
-    margin: 0 auto;
-}
-
-footer .svg-inline--fa:hover {
-    color: #68a0d2;
+    li {
+        font-size: 1.2rem;
+        margin: 0 auto;
+        a:hover {
+            color: #ed3333;
+            text-decoration: none;
+        }
+        a:focus {
+            color: #ed3333;
+        }
+    }
 }
 
 

@@ -7,12 +7,15 @@
         "gh-pages": "^3.1.0",
         "init": "^0.1.2",
         "jquery": "^3.5.1",
-        "parcel-bundler": "^1.12.4",
         "popper.js": "^1.16.1"
     },
-    "devDependencies": {},
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4"
+    },
     "scripts": {
-        "deploy": "gh-pages -d dist"
+        "deploy": "gh-pages -d dist",
+        "dev": "parcel src/index.html",
+        "prod": "parcel build src/index.html"
     },
     "repository": {
         "type": "git",

@@ -1,0 +1,22 @@
+.headshot-container {
+    position: relative;
+    top: 5rem;
+    h1 {
+        position: absolute;
+        transform: translate(0%, -100%);
+        font-size: 3.3rem;
+        font-weight: 800;
+        z-index: 2;
+    }
+    .headshot-border {
+        border: 3px solid white;
+    }
+    img {
+        height: 80vh;
+        object-fit: cover;
+    }
+    a {
+        position: relative;
+        font-size: 1.5rem;
+    }
+}
