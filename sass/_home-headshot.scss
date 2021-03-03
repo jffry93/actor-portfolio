@@ -1,19 +1,25 @@
 .headshot-container {
     position: relative;
     top: 5rem;
+    min-height: 95vh;
     h1 {
-        position: absolute;
-        transform: translate(0%, -100%);
-        font-size: 3.3rem;
+        position: relative;
+        transform: translate(0%, -10%);
+        font-size: 2rem;
         font-weight: 800;
         z-index: 2;
     }
     .headshot-border {
-        border: 3px solid white;
+        width: 100%;
+        border: 3px solid black;
+        overflow: hidden;
     }
     img {
-        height: 80vh;
+        height: 75vh;
         object-fit: cover;
+        transform: scale(1.3);
+        position: relative;
+        top: 5rem;
     }
     a {
         position: relative;

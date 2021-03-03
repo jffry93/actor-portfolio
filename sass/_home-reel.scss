@@ -1,0 +1,24 @@
+.reel-container-bg {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 7%);
+    min-height: 95vh;
+    max-height: 1100px;
+    background: #8a0303!important;
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+.reel-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    background: black!important;
+    border: 3px solid black;
+    iframe {
+        width: 100%;
+        height: 65vh;
+        max-height: 800px;
+    }
+}

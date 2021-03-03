@@ -1,13 +1,15 @@
 .navbar-brand {
-    font-size: 1.7rem;
-    font-weight: 800;
-    letter-spacing: 0.02rem;
+    height: 100px;
+}
+
+.logo {
+    height: 100px;
 }
 
 .navbar {
     position: fixed;
     width: 100%;
-    top: 2.8rem;
+    top: 0px;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: .1rem;
@@ -18,7 +20,7 @@
         color: white;
         font-weight: 800;
         &:hover {
-            color: #ed3333;
+            color: #8a0303;
         }
     }
 }
@@ -40,7 +42,7 @@
 
 .nav-link.active,
 .nav-link:hover {
-    color: #de3333!important;
+    color: #8a0303!important;
 }
 
 

@@ -1,0 +1,31 @@
+.resume-container-bg {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    min-height: 95vh;
+    background: white!important;
+    .resume-container {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        background-color: white;
+        h1 {
+            color: #8a0303;
+            font-size: 3rem;
+        }
+        img {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            width: 100%;
+            max-width: 1140px;
+            object-fit: cover;
+        }
+        a {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            font-size: 1.5rem;
+        }
+    }
+}
