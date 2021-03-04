@@ -1,7 +1,19 @@
 .headshot-container {
     position: relative;
+    top: 40px!important;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding-bottom: 0px!important;
     top: 5rem;
-    min-height: 95vh;
+    max-width: 1140px;
+    max-height: 2000px;
+    .main-row {
+        position: relative;
+        top: -20px;
+        left: 0%;
+        transform: translate(0%, 0%);
+        padding-bottom: 0px;
+    }
     h1 {
         position: relative;
         transform: translate(0%, -10%);
@@ -11,20 +23,26 @@
     }
     .headshot-border {
         width: 100%;
-        border: 3px solid black;
+        border: 3px solid white;
         overflow: hidden;
     }
     img {
-        min-height: 800px;
-        height: 80vh!important;
-        object-fit: cover;
-        transform: scale(1.2);
         position: relative;
-        top: 6rem;
+        min-height: 800px;
+        height: 80vh;
+        object-fit: cover;
+        transform: scale(1.35);
+        position: relative;
+        top: 8rem;
+        width: auto;
     }
     .headshot-btns {
         position: relative;
-        transform: translate(0%, 10%);
-        font-size: 1.5rem;
+        transform: translate(0%, 0%);
+        font-size: 5rem;
+        a {
+            font-size: 1.6rem;
+            ;
+        }
     }
 }

@@ -5,10 +5,11 @@
     height: 95vh;
     background: #8a0303!important;
     .reel-container {
-        position: absolute;
+        position: relative;
         left: 0%;
-        transform: translate(0%, 20%);
+        transform: translate(0%, 0%);
         width: 100%;
+        max-width: 1140px;
         height: 60vh;
         iframe {
             height: 100%;
