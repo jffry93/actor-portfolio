@@ -41,12 +41,11 @@ nav {
             }
         }
     }
-}
-
-.active {
-    color: $primary-color!important;
-    &:hover,
-    &:focus {
-        color: white!important;
+    .active {
+        color: $primary-color!important;
+        &:hover,
+        &:focus {
+            color: white!important;
+        }
     }
 }

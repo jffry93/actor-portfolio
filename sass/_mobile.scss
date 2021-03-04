@@ -42,6 +42,21 @@
             font-size: 1.3rem;
         }
     }
+    .reel-container {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 5%)!important;
+        background: $primary-color;
+        iframe {
+            width: 100%;
+            max-width: 1140px;
+        }
+        .reel-btns {
+            a {
+                font-size: 1.3rem!important;
+            }
+        }
+    }
 }
 
 
@@ -50,7 +65,7 @@
 @media (max-width: 770.98px) {
     nav {
         h2 {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
         .navbar-nav {
             display: flex;
@@ -82,6 +97,56 @@
                 font-size: 1.2rem!important;
                 ;
             }
+        }
+    }
+    .reel-container {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 5%)!important;
+        background: $primary-color;
+        iframe {
+            width: 100%;
+            max-width: 1140px;
+        }
+        .reel-btns {
+            a {
+                font-size: 1.2rem!important;
+            }
+        }
+    }
+    .resume-container-bg {
+        position: relative;
+        top: 38px!important;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        min-height: 95vh;
+        background: white!important;
+        .resume-container {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            background-color: white;
+            h1 {
+                color: #8a0303;
+                font-size: 3rem;
+            }
+            img {
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                width: 100%;
+                max-width: 1140px;
+                object-fit: cover;
+            }
+            a {
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                font-size: 1.5rem;
+            }
+        }
+        .resume-border {
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
         }
     }
 }
@@ -123,6 +188,20 @@
             a {
                 font-size: 1rem!important;
                 ;
+            }
+        }
+    }
+    .reel-container {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 4%)!important;
+        background: $primary-color;
+        iframe {
+            min-height: 300px;
+        }
+        .reel-btns {
+            a {
+                font-size: 1rem!important;
             }
         }
     }
@@ -170,6 +249,25 @@
             a {
                 font-size: .8rem!important;
                 ;
+            }
+        }
+    }
+    .reel-container {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 4%)!important;
+        background: $primary-color;
+        iframe {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            min-height: 300px;
+            width: 100%;
+            max-width: 1140px;
+        }
+        .reel-btns {
+            a {
+                font-size: .8rem!important;
             }
         }
     }
