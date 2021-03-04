@@ -15,76 +15,81 @@
 <script src="/bootstrap.min.108cc16f.js"></script><script src="/style.min.d6305865.js"></script></head>
 
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container col-12 text-center">
-            <p>
-                <a><i class="fab fa-instagram mx-2"></i></a>
-                <a><i class="fab fa-facebook mx-2"></i></a>
-                <a><i class="fab fa-snapchat-ghost mx-2"></i></a>
-                <a><i class="fab fa-linkedin-in mx-2"></i></a>
-            </p>
-        </div>
-    </div>
-    <!-- End Top Bar -->
     <!-- Navigation -->
-    <nav class="navbar bg-light navbar-light navbar-expand-lg">
+    <nav class="conatiner-fluid py-3">
         <div class="container">
-            <a href="/index.html" class="navbar-brand text-uppercase font-weight-bold">Matthew Del Bel Belluz</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span><i class="fas fa-bars fa-2x"></i></span>
-        </button>
-            <div class="collapse navbar-collapse text-uppercase" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="/index.html" class="nav-link active">Home</a></li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Headshots</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Reels</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Stills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">About</a>
-                    </li>
-                </ul>
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-12">
+                    <a class="logo" href="/index.html">
+                        <h2 class="text-uppercase text-lg-left text-center">Matthew Del Bel Belluz</h2>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-12 text-lg-right text-center">
+                    <ul class="navbar-nav text-uppercase text-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              portfolio
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Headshots</a>
+                                <a class="dropdown-item" href="#">reels</a>
+                                <a class="dropdown-item" href="#">Images</a>
+                                <a class="dropdown-item" href="#">Resume</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+
     </nav>
     <!-- End Navigation -->
     <!--HEADING-->
     <!-- Headshot Section -->
     <div class="container headshot-container py-5">
         <div class="row align-items-center">
-            <div class="col-3 col-lg-4 text-left text-lg-left">
-                <h1>Dark Quadruple Threat</h1>
-            </div>
-            <div class="col-12 col-lg-8  text-center">
+            <div class="col-12 col-lg-8 text-center">
                 <div class="headshot-border">
-                    <img src="/img/delbelheadshot.jpg" alt="" class="w-100">
+                    <img src="/img/delbelheadshot.jpg" alt="">
                 </div>
-                <a href="/img/delbelheadshot.jpg" download="Matthew-Del-Bel-Belluz.jpg" class="btn btn-outline-light btn-lg my-3 ">Download Headshot</a>
-                <a href="# " target="_blank " class="btn btn-outline-light btn-lg block ">More Headshots</a>
+                <div class="container">
+                    <a href="/img/delbelheadshot.jpg" download="Matthew-Del-Bel-Belluz.jpg" class="btn btn-outline-light btn-lg my-3 ">Download Headshot</a>
+                    <a href="# " target="_blank " class="btn btn-outline-light btn-lg block ">More Headshots</a>
+                </div>
+            </div>
+            <div class="col-12 py-4 col-lg-4 text-center text-lg-left">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi alias eveniet tenetur voluptates, distinctio nobis earum dolorum sunt sit?</h1>
             </div>
         </div>
     </div>
     <!--REEL CONTAINER-->
-    <div class="container-fluid reel-container-bg">
-        <h1 class="text-center pt-5 font-weight-bold">Reel</h1>
-        <div class="container reel-container">
-            <iframe class="py-5 homepage-reel" src="https://www.youtube.com/embed/ozDvyYDV8A0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <div class="row container-fluid reel-container-bg">
+        <h1 class="col-12 text-center pt-5 font-weight-bold">Reel</h1>
+        <div class="col-12 container reel-container">
+            <iframe class="homepage-reel" src="https://www.youtube.com/embed/ozDvyYDV8A0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        </div>
+        <div class="col-12 container reel-btns text-center">
+            <a href="/img/delbelheadshot.jpg" download="Matthew-Del-Bel-Belluz.jpg" class="btn btn-outline-light btn-lg my-3 ">Download Reel</a>
+            <a href="# " target="_blank " class="btn btn-outline-light btn-lg block ">More Reels</a>
         </div>
     </div>
 
     <!--RESUME CONTAINER-->
     <div class="container-fluid resume-container-bg">
         <div class="container">
-            <div class="resume-container row">
+            <div class="resume-container row py-5">
                 <div class="col-12 ">
                     <h1 class="font-weight-bold text-center">Resume</h1>
-                    <a href="/img/Matthew-Del-Bel-Belluz-Resume.pdf" download="Matthew-Del-Bel-Belluz-resume.pdf" class="btn btn-outline-dark btn-lg my-3 ">Download Resume</a>
+                    <div class="resume-border my-5">
+                        <img src="/mdbb-resume.85a6a1ce.jpg" alt="">
+                    </div>
+                    <a href="/resume/mdbb-resume.pdf" download="Matthew-Del-Bel-Belluz-resume.pdf" class="btn btn-outline-dark btn-lg my-3 resume-btn">Download Resume</a>
                 </div>
             </div>
         </div>
@@ -92,6 +97,16 @@
 
     <!-- Start Footer -->
     <footer>
+        <!-- CONNECT WITH ME -->
+        <div class="container col-12 text-center text-uppercase connect-container">
+            <h2>Connect with me</h2>
+            <a><i class="fab fa-instagram mx-2"></i></a>
+            <a><i class="fab fa-facebook mx-2"></i></a>
+            <a><i class="fab fa-snapchat-ghost mx-2"></i></a>
+            <a><i class="fab fa-linkedin-in mx-2"></i></a>
+            <a><i class="fab fa-linkedin-in mx-2"></i></a>
+        </div>
+        <!-- End CONNECT WITH ME -->
         <div class="container">
             <div class="row text-light text-center py-4 justify-content-center">
                 <div class="col-sm-10 col-md-8 col-lg-6">
@@ -131,11 +146,10 @@
     <script src="/popper.min.a535ab6a.js"></script>
     <!-- Font Awesome -->
     <script src="/all.min.248a9b6c.js"></script>
-    <!---Newsletter Modal-->
-    <script>$(document).ready(function () {
-  $("#myModal ").modal('show');
-});</script>
-
+    <!--Test script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
     <!-- End Script Source Files -->

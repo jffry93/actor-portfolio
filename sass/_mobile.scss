@@ -9,9 +9,6 @@
 /* Devices under 992px (md) */
 
 @media (max-width: 991.98px) {
-    .navbar .fa-bars {
-        font-size: 1.5rem;
-    }
     .btn-lg {
         font-size: .95rem;
     }
@@ -36,39 +33,73 @@
 }
 
 
-/* Devices under 992px (md) */
+/* Devices under 770px (md) */
 
-@media (max-width: 766.98px) {
-    .headshot-container {
-        position: relative;
-        top: 5rem;
-        h1 {
-            font-size: 3rem;
+@media (max-width: 770.98px) {
+    nav {
+        h2 {
+            color: white;
+            font-size: 2rem;
             font-weight: 800;
-            z-index: 100;
         }
-        img {
-            height: 70vh!important;
-            object-fit: cover;
-            position: relative;
-            transform: scale(1);
-        }
-        a {
-            position: relative;
-            font-size: 1.3rem;
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            a {
+                color: white;
+                font-weight: 600;
+                font-size: 1rem;
+                &:hover,
+                &:focus {
+                    color: #ed3333;
+                }
+            }
         }
     }
 }
 
-
-/* Devices under 420px (md) */
-
-@media (max-width: 450px) {
-    .top-bar a {
+.headshot-container {
+    position: relative;
+    top: 5rem;
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        z-index: 100;
+    }
+    img {
+        height: 70vh!important;
+        object-fit: cover;
+        right: 0px;
+    }
+    a {
+        position: relative;
         font-size: 1.3rem;
     }
-    .navbar-brand {
-        font-size: 1rem;
+}
+
+
+/* Devices under 450px (md) */
+
+@media (max-width: 450px) {
+    nav {
+        h2 {
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            a {
+                color: white;
+                font-weight: 600;
+                font-size: .8rem;
+                &:hover,
+                &:focus {
+                    color: #ed3333;
+                }
+            }
+        }
     }
     .headshot-container {
         position: relative;
@@ -105,14 +136,25 @@
 }
 
 @media (max-width: 320px) {
-    .top-bar a {
-        font-size: 1.2rem;
-    }
-    .navbar .fa-bars {
-        font-size: 1.2rem;
-    }
-    .navbar-brand {
-        font-size: .8rem;
+    nav {
+        h2 {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 800;
+        }
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            a {
+                color: white;
+                font-weight: 600;
+                font-size: .7rem;
+                &:hover,
+                &:focus {
+                    color: #ed3333;
+                }
+            }
+        }
     }
     .headshot-container {
         position: relative;

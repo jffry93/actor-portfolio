@@ -1,3 +1,20 @@
+//Connect with me section
+.connect-container {
+    h2 {
+        font-weight: 800;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 2rem;
+        &:hover,
+        &:focus {
+            color: #ed3333;
+        }
+    }
+}
+
+// Agent information
 footer {
     background-color: #383838;
     padding: 1rem 2rem 3rem;

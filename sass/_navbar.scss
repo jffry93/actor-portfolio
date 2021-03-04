@@ -1,58 +1,41 @@
-.navbar-brand {
-    height: 100px;
-}
-
-.logo {
-    height: 100px;
-}
-
-.navbar {
+nav {
+    background: black;
     position: fixed;
     width: 100%;
-    top: 0px;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
-    z-index: 100;
-    background: black!important;
-    .navbar-brand {
+    z-index: 10;
+    .logo {
+        cursor: pointer;
+        text-decoration: none;
+    }
+    h2 {
         color: white;
+        font-size: 2.4rem;
         font-weight: 800;
-        &:hover {
-            color: #8a0303;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        li {
+            margin: auto;
+            color: white;
+        }
+        .dropdown-menu {
+            background: black;
+            a:hover,
+            a:focus {
+                background-color: #ed3333;
+                color: black;
+            }
+        }
+        a {
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            &:hover,
+            &:focus {
+                color: #ed3333;
+            }
         }
     }
-}
-
-.navbar .fa-bars {
-    color: #e9e9ef;
-    &:focus {
-        border: black;
-    }
-}
-
-.nav-item {
-    padding: .5rem;
-}
-
-.nav-link {
-    color: #e9ecef!important;
-}
-
-.nav-link.active,
-.nav-link:hover {
-    color: #8a0303!important;
-}
-
-
-/*--Hamburger icon in navbar--*/
-
-.navbar-toggler button {
-    border-radius: 0rem!important;
-}
-
-.navbar-toggler-icon {
-    height: 1em;
-    width: 1em;
 }
