@@ -13,7 +13,7 @@
         "parcel-bundler": "^1.12.4"
     },
     "scripts": {
-        "deploy": "gh-pages -d dist",
+        "deploy": "gh-pages -d src",
         "dev": "parcel src/index.html",
         "prod": "parcel build src/index.html"
     },

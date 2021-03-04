@@ -73,7 +73,7 @@
     }
     a {
         position: relative;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
 
@@ -103,21 +103,22 @@
     }
     .headshot-container {
         position: relative;
-        top: 3rem!important;
+        top: 2rem!important;
         h1 {
             font-size: 1.5rem!important;
             font-weight: 800;
             transform: translate(0%, 10%)!important;
         }
         img {
-            height: 70vh!important;
-            left: 0px!important;
-            transform: scale(1);
+            min-height: 400px!important;
+            top: 10px!important;
+            right: 35px!important;
+            transform: scale(1)!important;
         }
         a {
             position: relative;
-            top: 1rem;
-            font-size: .7rem!important;
+            top: 0rem;
+            font-size: .65rem!important;
         }
     }
     ul.social {
