@@ -16,6 +16,10 @@
 
 // Agent information
 footer {
+    position: relative;
+    top: 105px;
+    left: 50%;
+    transform: translate(-50%, 0%);
     background-color: #383838;
     padding: 1rem 2rem 3rem;
     img {
@@ -59,6 +63,10 @@ ul.social {
 /*============= Copyright SOCKET =============*/
 
 .socket {
+    position: relative;
+    top: 105px;
+    left: 50%;
+    transform: translate(-50%, 0%);
     background-color: #222222;
     border-top: .1rem solid white;
 }
