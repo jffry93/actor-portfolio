@@ -8,7 +8,10 @@ nav {
         position: relative;
         left: 50%;
         transform: translate(-50%, 0%);
-        max-width: 1140px;
+        max-width: 1400px;
+        padding: 0;
+    }
+    .nav-content {
         padding: 0;
     }
     .logo {
@@ -17,22 +20,20 @@ nav {
     }
     h2 {
         color: white;
-        font-size: 2.6rem;
+        font-size: 2.1rem;
         font-weight: 800;
-        margin-bottom: 0;
-        width: 100%;
     }
     .navbar-nav {
-        display: flex;
-        flex-direction: row;
         width: 100%;
         position: relative;
         left: 50%;
         transform: translate(-50%, 0%);
-        max-width: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
         li {
-            margin: auto;
             color: white;
+            margin: 0 1rem;
         }
         .dropdown-menu {
             background: black;

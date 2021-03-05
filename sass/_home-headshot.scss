@@ -5,7 +5,7 @@
     transform: translate(-50%, 0%);
     padding-bottom: 0px!important;
     top: 5rem;
-    max-width: 1140px!important;
+    max-width: 1400px;
     max-height: 2000px;
     .main-row {
         position: relative;
@@ -17,7 +17,7 @@
     h1 {
         position: relative;
         transform: translate(0%, -0%);
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 800;
         z-index: 2;
     }
@@ -28,11 +28,11 @@
     }
     img {
         position: relative;
-        min-height: 800px;
+        min-height: 600px;
         max-height: 1100px;
         height: 80vh;
         object-fit: cover;
-        transform: scale(1.35);
+        transform: scale(1.45);
         position: relative;
         top: 8rem;
         width: auto;
@@ -42,10 +42,14 @@
         transform: translate(0%, 0%);
         font-size: 5rem;
         a {
-            font-size: 1.3rem;
+            font-size: .9rem;
             &:hover {
                 text-decoration: none;
             }
         }
     }
+}
+
+.dqt {
+    color: $primary-color;
 }
