@@ -16,7 +16,7 @@
     }
     h1 {
         position: relative;
-        transform: translate(0%, -10%);
+        transform: translate(0%, -0%);
         font-size: 2rem;
         font-weight: 800;
         z-index: 2;
@@ -29,6 +29,7 @@
     img {
         position: relative;
         min-height: 800px;
+        max-height: 1100px;
         height: 80vh;
         object-fit: cover;
         transform: scale(1.35);
@@ -41,8 +42,10 @@
         transform: translate(0%, 0%);
         font-size: 5rem;
         a {
-            font-size: 1.6rem;
-            ;
+            font-size: 1.3rem;
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 }

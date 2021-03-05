@@ -14,22 +14,23 @@ $primary-color: #de3333;
 }
 
 .btn-secondary {
-    background-color: #de3333;
-    border: .1rem solid #de3333;
+    color: #222222;
+    background-color: white;
+    border: .1rem solid white;
 }
 
 .btn-primary {
-    background-color: #116466;
-    border: .05rem solid #116466;
-}
-
-.btn-primary:hover {
-    background-color: #1c7274;
-    border: .05rem solid #1c7274;
+    color: $primary-color;
+    background-color: inherit;
+    border: .05rem solid $primary-color;
+    &:hover {
+        background-color: white;
+        border: .05rem solid black;
+    }
 }
 
 .btn-primary:focus {
-    background-color: #1c7274!important;
+    background-color: $primary-color!important;
     border: .1rem solid #1c7274!important;
 }
 

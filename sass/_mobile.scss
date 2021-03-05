@@ -7,6 +7,18 @@
 
 /*============= MEDIA QUERIES =============*/
 
+@media (min-width: 1039.98px) {
+    nav {
+        .logo {
+            cursor: pointer;
+            text-decoration: none;
+        }
+        h2 {
+            margin-bottom: 5px;
+        }
+    }
+}
+
 
 /* Devices under 992px (md) */
 
@@ -19,6 +31,9 @@
         h2 {
             font-size: 2.4rem;
             margin-bottom: 5px;
+        }
+        .navbar-nav {
+            max-width: 600px;
         }
     }
     .headshot-container {
@@ -36,10 +51,6 @@
             transform: scale(1.5)!important;
             position: relative;
             top: 11rem!important;
-        }
-        a {
-            position: relative;
-            font-size: 1.3rem;
         }
     }
     .reel-container {
@@ -65,11 +76,12 @@
 @media (max-width: 770.98px) {
     nav {
         h2 {
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
         .navbar-nav {
             display: flex;
             flex-direction: row;
+            max-width: 500px;
             a {
                 font-size: .9rem;
             }
@@ -94,7 +106,7 @@
             transform: translate(0%, 0%);
             padding-bottom: 0rem!important;
             a {
-                font-size: 1.2rem!important;
+                font-size: 1.1rem!important;
                 ;
             }
         }
@@ -151,6 +163,46 @@
     }
 }
 
+@media (max-width: 600px) {
+    nav {
+        h2 {
+            font-size: 2rem;
+        }
+        .navbar-nav {
+            a {
+                font-size: .7rem;
+            }
+        }
+    }
+    .headshot-container {
+        .headshot-btns {
+            a {
+                font-size: .8rem!important;
+                ;
+            }
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    nav {
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    nav {
+        h2 {
+            font-size: 1.6rem;
+        }
+        .navbar-nav {
+            max-width: 300px;
+        }
+    }
+}
+
 
 /* Devices under 450px (md) */
 
@@ -158,12 +210,13 @@
     nav {
         h2 {
             color: white;
-            font-size: 1.3rem;
+            font-size: 1.65rem;
             font-weight: 800;
         }
         .navbar-nav {
             display: flex;
             flex-direction: row;
+            max-width: 300px;
             a {
                 font-size: .7rem;
             }
@@ -172,12 +225,12 @@
     .headshot-container {
         h1 {
             font-size: 1rem!important;
-            transform: translate(0%, 0%)!important;
+            transform: translate(0%, 10%)!important;
         }
         img {
             min-height: 300px!important;
             height: 71vh!important;
-            top: 0!important;
+            top: 25px!important;
             right: 0!important;
             transform: scale(1.1)!important;
             width: 100%!important;
@@ -186,7 +239,7 @@
             position: relative;
             transform: translate(0%, 0%);
             a {
-                font-size: 1rem!important;
+                font-size: .6rem!important;
                 ;
             }
         }
@@ -220,12 +273,37 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 440px) {
     nav {
         h2 {
-            font-size: 1.1rem;
+            font-size: 1.49rem;
+        }
+    }
+}
+
+@media (max-width: 415px) {
+    nav {
+        h2 {
+            font-size: 1.39rem;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    nav {
+        h2 {
+            font-size: 1.36rem;
+        }
+    }
+}
+
+@media (max-width: 366px) {
+    nav {
+        h2 {
+            font-size: 1.2rem;
         }
         .navbar-nav {
+            max-width: 270px;
             a {
                 font-size: .5rem;
             }
@@ -238,6 +316,7 @@
             font-size: 1.1rem!important;
             font-weight: 800;
             z-index: 100;
+            transform: translate(0%, 7%)!important;
         }
         img {
             transform: scale(1.5);
@@ -268,6 +347,38 @@
         .reel-btns {
             a {
                 font-size: .8rem!important;
+            }
+        }
+    }
+}
+
+@media (max-width: 335px) {
+    nav {
+        h2 {
+            font-size: 1.1rem;
+        }
+        .navbar-nav {
+            max-width: 250px;
+        }
+    }
+    .headshot-container {
+        position: relative;
+        top: 3rem!important;
+        h1 {
+            font-size: 1.1rem!important;
+            font-weight: 800;
+            z-index: 100;
+        }
+        img {
+            transform: scale(1.5);
+            height: 67vh!important;
+        }
+        .headshot-btns {
+            position: relative;
+            transform: translate(0%, 0%);
+            a {
+                font-size: .8rem!important;
+                ;
             }
         }
     }
