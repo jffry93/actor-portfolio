@@ -34,12 +34,22 @@ footer {
         .social-icons {
             a {
                 font-size: 1.85rem;
+                &:hover {
+                    &:hover {
+                        color: $primary-color;
+                        text-decoration: none!important;
+                    }
+                }
             }
             .camera {
                 position: relative;
                 top: -3.5px;
                 height: 28.5px;
                 width: 28.5px;
+                &:hover {
+                    color: $primary-color;
+                    text-decoration: none!important;
+                }
             }
             .film {
                 position: relative;
@@ -47,11 +57,17 @@ footer {
                 left: -5px;
                 height: 28.5px;
                 width: 28.5px;
+                &:hover {
+                    color: $primary-color;
+                    text-decoration: none!important;
+                }
             }
         }
     }
 }
 
+.film a,
+.camera a,
 footer p,
 footer a,
 .socket a {
