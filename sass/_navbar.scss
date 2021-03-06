@@ -36,6 +36,8 @@ nav {
             margin: 0 1rem;
         }
         .dropdown-menu {
+            position: absolute;
+            left: -20px!important;
             background: black;
             border-radius: 2%;
             a:hover,
