@@ -41,9 +41,23 @@
         }
     }
     
+    @media (max-width: 1370.98px) {
+        .resume-container-bg {
+            top: 120px!important;
+            .resume-container {
+                a {
+                    position: relative;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                    font-size: 1.1rem!important;
+                }
+            }
+        }
+    }
+    
     @media (max-width: 1300.98px) {
         .resume-container-bg {
-            top: 130px!important;
+            top: 130px;
             .resume-container {
                 a {
                     position: relative;
@@ -123,7 +137,7 @@
             }
         }
         .resume-container-bg {
-            top: 35px!important;
+            top: 30px!important;
             .resume-container {
                 a {
                     position: relative;
@@ -224,7 +238,7 @@
         }
         .resume-container-bg {
             position: relative;
-            top: 30px!important;
+            top: 50%!important;
             left: 50%;
             transform: translate(-50%, 0%);
             background: white!important;
@@ -285,7 +299,6 @@
             }
         }
         .resume-container-bg {
-            top: 25px!important;
             .resume-container {
                 a {
                     font-size: .8rem!important;
