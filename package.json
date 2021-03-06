@@ -3,21 +3,8 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "dependencies": {
-        "bootstrap": "^5.0.0-beta2",
-        "bootstrap-icons": "file:node_modules/bootstrap-icons",
-        "gh-pages": "^3.1.0",
-        "init": "^0.1.2",
-        "jquery": "^3.5.1",
-        "popper.js": "^1.16.1"
-    },
-    "devDependencies": {
-        "parcel-bundler": "^1.12.4"
-    },
     "scripts": {
-        "deploy": "gh-pages -d src",
-        "dev": "parcel src/index.html",
-        "prod": "parcel build src/index.html"
+        "deploy": "gh-pages -d src"
     },
     "repository": {
         "type": "git",
@@ -29,5 +16,8 @@
     "bugs": {
         "url": "https://github.com/jffry93/actor-portfolio/issues"
     },
-    "homepage": "https://github.com/jffry93/actor-portfolio#readme"
+    "homepage": "https://github.com/jffry93/actor-portfolio#readme",
+    "dependencies": {
+        "gh-pages": "^3.1.0"
+    }
 }
