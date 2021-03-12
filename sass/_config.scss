@@ -22,24 +22,13 @@ $primary-color: #de3333;
 .btn-primary {
     color: $primary-color;
     background-color: inherit;
-    border: .05rem solid $primary-color;
+    border: solid $primary-color;
     &:hover {
-        background-color: white;
-        border: .05rem solid black;
+        background-color: white!important;
+        border: 1px solid black;
     }
 }
 
 .btn-primary:focus {
-    background-color: $primary-color!important;
-    border: .1rem solid #1c7274!important;
-}
-
-.btn-secondary:hover {
-    background-color: #de3333;
-    border: .05rem solid #de3333;
-}
-
-.btn-secondary:focus {
-    background-color: #de3333!important;
-    border: .1rem solid #fff;
+    background-color: white!important;
 }

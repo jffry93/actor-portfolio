@@ -41,6 +41,8 @@
         position: relative;
         transform: translate(0%, 0%);
         font-size: 5rem;
+        font-weight: 500;
+        border-width: medium;
         a {
             font-size: .9rem;
             &:hover {
