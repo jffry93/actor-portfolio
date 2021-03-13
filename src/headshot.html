@@ -33,7 +33,7 @@
                               portfolio
                             </a>
                             <div class="dropdown-menu px-2" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="headshot.html">Headshots</a>
+                                <a class="dropdown-item" href="#">Headshots</a>
                                 <a class="dropdown-item" href="#">Reels</a>
                                 <a class="dropdown-item" href="#">Images</a>
                                 <a class="dropdown-item" href="#resume-content">Resume</a>
@@ -52,62 +52,59 @@
 
     </nav>
     <!-- End Navigation -->
-    <!--HEADING-->
-    <!-- Headshot Section -->
-    <div class="fluid-container headshot-container ">
-        <div class="row align-items-center main-row">
-            <div class="col-12 col-lg-6 text-center">
-                <div class="headshot-border">
-                    <img src="img/headshots/delbelheadshot.jpg" alt="">
-                </div>
-                <div class="fluid-container headshot-btns row my-2 py-5">
-                    <a href="img/headshots/delbelheadshot.jpg" download="Matthew-Del-Bel-Belluz.jpg" class="mx-1 btn-primary btn-outline-light btn-lg col ">Download Headshot</a>
-                    <a href="headshot.html" class="mx-1 btn-primary btn-outline-light btn-lg col">More Headshots</a>
-                </div>
-            </div>
-            <div class="heading-content col pb-5 col-lg-6 text-center text-lg-left">
-                <h1 class="pb-2">Welcome! </h1>
-                <h1 class="pb-2">I am a bilingual (Mandarin/English) actor with 10 years of professional experience ranging from film and television to musical theatre. </h1>
-                <h1 class="pb-2">With my extensive training and experience in acting, song, dance and martial arts, I might just be the <span class="dqt"> Dark Quadruple Threat </span>you need for your next project!</h1>
-            </div>
-        </div>
-    </div>
-    <!--REEL CONTAINER-->
-    <div class="fluid-container reel-container pb-6 ">
-
-        <div class="row py-5">
-            <h1 class="col-12 text-center font-weight-bold">Engrish Dialogue Reel</h1>
-            <div class="col-12 container">
-                <video class="homepage-reel py-5" width="100%" controls>
-                    <source src="reel/Matthew Belluz English Demo V2.mp4" type="video/mp4">
-                    <source src="movie.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
-                  </video>
-            </div>
-            <div class="container row reel-btns pb-4">
-                <a href="reel/Matthew Belluz English Demo V2.mp4" download="MatthewDelBelBelluz_Demo.mp4" class="mx-1 col btn btn-outline-light btn-lg">Download Reel</a>
-                <a href="# " target="_blank " class="mx-1 col btn btn-outline-light btn-lg block">More Reels</a>
-            </div>
-        </div>
-
-
-    </div>
-
-
-    <!--RESUME CONTAINER-->
-    <div class="container-fluid resume-container-bg pb-5">
-        <div class="container-fluid">
-            <div class="resume-container row py-5">
-                <div id="resume-content" class="col-12 ">
-                    <h1 class="font-weight-bold text-center">Resume</h1>
-                    <div class="resume-border my-5">
-                        <img src="resume/MatthewDelBelBelluz_CV2021.jpg" alt="">
+    <div class="my-container headshot-section container-fluid">
+        <div class="my-row row justify-content-around">
+            <div class="my-col small-img-container col-3">
+                <div class="py-2">
+                    <div class="small-img-border">
+                        <img id="click-on-load" class="small-img" src="img/headshots/delbelheadshot.jpg" alt="MatthewDelBelBelluzHeadshot1.jpg" onclick="myFunction(this)">
                     </div>
-                    <a href="resume/MatthewDelBelBelluz_CV2021.pdf" download="MatthewDelBelBelluz_CV2021.pdf" class="btn btn-outline-dark btn-lg my-3 resume-btn">Download Resume</a>
+                </div>
+                <div class="row py-2">
+                    <div class="small-img-border">
+                        <img class="small-img" src="img/headshots/mdbb2.jpg" alt="MatthewDelBelBelluzHeadshot2.jpg" onclick="myFunction(this);">
+                    </div>
+
+                </div>
+                <div class=" py-2">
+                    <div class="small-img-border">
+                        <img class="small-img" src="img/headshots/MDBB3.jpg" alt="MatthewDelBelBelluzHeadshot3.jpg" onclick="myFunction(this);">
+                    </div>
+                </div>
+            </div>
+            <div class="col-9 px-0">
+                <div class="large-img-border">
+                    <img id="expandedImg" class="large-img col-12">
                 </div>
             </div>
         </div>
+        <div class="row justify-content-end">
+            <a id="imgtext" class="col-9 download-btn text-center btn-primary btn-outline-light btn-lg">Download Headshot</a>
+        </div>
     </div>
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            //testing dom
+            imgText.download = imgs.download;
+            imgText.href = imgs.src;
+
+
+            //end testing
+            imgText.download = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+    <script>
+        window.setTimeout(clickit, 0);
+
+        function clickit() {
+            document.getElementById("click-on-load").click();
+        }
+    </script>
+
 
     <!-- Start Footer -->
     <footer>

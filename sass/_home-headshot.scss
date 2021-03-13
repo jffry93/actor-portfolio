@@ -1,18 +1,12 @@
 .headshot-container {
     position: relative;
-    top: 40px!important;
+    margin-top: 60.19px;
+    top: 0px;
     left: 50%;
     transform: translate(-50%, 0%);
-    padding-bottom: 0px!important;
-    top: 5rem;
     max-width: 1400px;
-    max-height: 2000px;
-    .main-row {
-        position: relative;
-        top: -20px;
-        left: 0%;
-        transform: translate(0%, 0%);
-        padding-bottom: 0px;
+    @include tablet {
+        margin-top: 105.19px;
     }
     h1 {
         position: relative;
@@ -22,20 +16,22 @@
         z-index: 2;
     }
     .headshot-border {
+        max-height: 900px;
         width: 100%;
-        border: 3px solid black;
+        border: 3px solid red;
         overflow: hidden;
+        @include tablet {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            max-width: 600px;
+        }
     }
     img {
         position: relative;
-        min-height: 600px;
-        max-height: 1100px;
-        height: 80vh;
         object-fit: cover;
-        transform: scale(1.45);
-        position: relative;
-        top: 8rem;
-        width: auto;
+        transform: scale(1);
+        width: 100%;
     }
     .headshot-btns {
         position: relative;

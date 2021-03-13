@@ -24,8 +24,8 @@ $primary-color: #de3333;
     background-color: inherit;
     border: solid $primary-color;
     &:hover {
-        background-color: white!important;
-        border: 1px solid black;
+        background-color: $primary-color!important;
+        border: .5px solid black;
     }
 }
 
