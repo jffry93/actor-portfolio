@@ -14,11 +14,13 @@
         padding: 0;
         .small-img-border {
             height: 25vh;
-            min-height: 250px;
+            min-height: 220px;
             width: 100%;
             overflow: hidden;
         }
         .small-img {
+            position: relative;
+            top: -50px;
             width: 100%;
             opacity: 1;
             &:hover {
@@ -28,12 +30,12 @@
     }
     .large-img-border {
         height: 100%;
-        border: 3px solid red;
+        border: 3px solid black;
     }
     .large-img {
         position: relative;
-        min-height: 653.4px;
-        height: 80vh;
+        min-height: 706.4px;
+        height: 79vh;
         object-fit: contain;
     }
 }

@@ -16,7 +16,7 @@
         z-index: 2;
     }
     .headshot-border {
-        max-height: 900px;
+        max-height: 700px;
         width: 100%;
         border: 3px solid red;
         overflow: hidden;
@@ -29,6 +29,7 @@
     }
     img {
         position: relative;
+        top: -2rem;
         object-fit: cover;
         transform: scale(1);
         width: 100%;
