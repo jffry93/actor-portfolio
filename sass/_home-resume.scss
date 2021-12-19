@@ -1,34 +1,40 @@
-.resume-container-bg {
-    position: relative;
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    background: white!important;
-    .resume-container {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        background-color: white;
-        max-width: 1140px;
-        h1 {
-            color: $primary-color;
-            font-size: 3rem;
-        }
-        img {
-            position: relative;
-            left: 50%;
-            transform: translate(-50%, 0%);
-            width: 100%;
-            object-fit: cover;
-        }
-        a {
-            position: relative;
-            left: 50%;
-            transform: translate(-50%, 0%);
-            font-size: 1rem;
-        }
+.resume-container {
+  min-height: 100vh;
+  position: relative;
+
+  background: url(/src/img/jeshoots-com-pUAM5hPaCRI-unsplash.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.resume-content {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  h1 {
+    margin: 0 0 3rem 0;
+  }
+  .resume-border {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 6rem;
+    img {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      width: 100%;
+      object-fit: cover;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     }
-    .resume-border {
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  }
+  .download-resume {
+    margin: 3rem 0 0 0;
+    a {
+      background-color: white;
     }
+  }
 }

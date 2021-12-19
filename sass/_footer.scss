@@ -1,88 +1,148 @@
 //Connect with me section
 // Agent information
+// footer {
+//     position: relative;
+//     bottom: 0px;
+//     left: 50%;
+//     transform: translate(-50%, 0%);
+//     background-color: hsl(0, 0%, 22%);
+//     padding-top: 1rem;
+//     .connect-container {
+//         position: relative;
+//         left: 50%;
+//         transform: translate(-50%, 0%);
+//         max-width: 1300px;
+//         h2 {
+//             font-size: 1.5rem;
+//             font-weight: 500;
+//         }
+//         ß h4 {
+//             font-size: 1rem;
+//             font-weight: 500;
+//         }
+//         .agency-content {
+//             a {
+//                 color: white;
+//                 text-decoration: none;
+//                 font-size: 1rem;
+//                 &:hover,
+//                 &:focus {
+//                     color: $primary-color;
+//                 }
+//             }
+//         }
+//         .social-icons {
+//             a {
+//                 font-size: 1.85rem;
+//                 &:hover {
+//                     &:hover {
+//                         color: $primary-color;
+//                         text-decoration: none!important;
+//                     }
+//                 }
+//             }
+//             .camera {
+//                 position: relative;
+//                 top: -3.5px;
+//                 height: 28.5px;
+//                 width: 28.5px;
+//                 &:hover {
+//                     color: $primary-color;
+//                     text-decoration: none!important;
+//                 }
+//             }
+//             .film {
+//                 position: relative;
+//                 top: -3px;
+//                 left: -5px;
+//                 height: 28.5px;
+//                 width: 28.5px;
+//                 &:hover {
+//                     color: $primary-color;
+//                     text-decoration: none!important;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .film a,
+// .camera a,
+// footer p,
+// footer a,
+// .socket a {
+//     color: white;
+//     text-decoration: none;
+// }
 footer {
-    position: relative;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    background-color: hsl(0, 0%, 22%);
-    padding-top: 1rem;
-    .connect-container {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        max-width: 1300px;
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 500;
-        }
-        ß h4 {
-            font-size: 1rem;
-            font-weight: 500;
-        }
-        .agency-content {
-            a {
-                color: white;
-                text-decoration: none;
-                font-size: 1rem;
-                &:hover,
-                &:focus {
-                    color: $primary-color;
-                }
-            }
-        }
-        .social-icons {
-            a {
-                font-size: 1.85rem;
-                &:hover {
-                    &:hover {
-                        color: $primary-color;
-                        text-decoration: none!important;
-                    }
-                }
-            }
-            .camera {
-                position: relative;
-                top: -3.5px;
-                height: 28.5px;
-                width: 28.5px;
-                &:hover {
-                    color: $primary-color;
-                    text-decoration: none!important;
-                }
-            }
-            .film {
-                position: relative;
-                top: -3px;
-                left: -5px;
-                height: 28.5px;
-                width: 28.5px;
-                &:hover {
-                    color: $primary-color;
-                    text-decoration: none!important;
-                }
-            }
-        }
-    }
-}
-
-.film a,
-.camera a,
-footer p,
-footer a,
-.socket a {
-    color: white;
+  width: 100%;
+  background-color: grey;
+  a {
     text-decoration: none;
+    color: inherit;
+  }
 }
-
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 3rem;
+  max-width: 1400px;
+  margin: auto;
+  .agency-info {
+    h1 {
+      margin: 0 0 2rem 0;
+    }
+    h2 {
+      margin: 0;
+    }
+    .agent-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 2rem 0 0 0;
+      a {
+        margin: 1rem 0 0 0;
+        svg {
+          margin: 0 1rem 0 0.5rem;
+        }
+      }
+    }
+  }
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    h1 {
+      margin: 0 0 2rem 0;
+    }
+    .social-icons {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin: 10px;
+      }
+      .camera-icon {
+        margin: 5px 0;
+      }
+    }
+    h4 {
+      margin: 3rem 0 0 0;
+    }
+  }
+}
 
 /*============= Copyright SOCKET =============*/
 
 .socket {
-    position: relative;
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    background-color: #222222;
-    border-top: .1rem solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+  p {
+    margin: 0;
+  }
 }

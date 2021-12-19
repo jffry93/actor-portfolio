@@ -1,54 +1,73 @@
-.headshot-container {
-    position: relative;
-    margin-top: 60.19px;
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    max-width: 1400px;
-    @include tablet {
-        margin-top: 105.19px;
-    }
-    h1 {
-        position: relative;
-        transform: translate(0%, -0%);
-        font-size: 1.5rem;
-        font-weight: 800;
-        z-index: 2;
-    }
-    .headshot-border {
-        max-height: 700px;
-        width: 100%;
-        border: 3px solid red;
-        overflow: hidden;
-        @include tablet {
-            position: relative;
-            left: 50%;
-            transform: translate(-50%, 0%);
-            max-width: 600px;
-        }
-    }
-    img {
-        position: relative;
-        top: -2rem;
-        object-fit: cover;
-        transform: scale(1);
-        width: 100%;
-    }
-    .headshot-btns {
-        position: relative;
-        transform: translate(0%, 0%);
-        font-size: 5rem;
-        font-weight: 500;
-        border-width: medium;
-        a {
-            font-size: .9rem;
-            &:hover {
-                text-decoration: none;
-            }
-        }
-    }
-}
+// .headshot-container {
+//     position: relative;
+//     margin-top: 60.19px;
+//     top: 0px;
+//     left: 50%;
+//     transform: translate(-50%, 0%);
+//     max-width: 1400px;
+//     @include tablet {
+//         margin-top: 105.19px;
+//     }
+//     h1 {
+//         position: relative;
+//         transform: translate(0%, -0%);
+//         font-size: 1.5rem;
+//         font-weight: 800;
+//         z-index: 2;
+//     }
+//     .headshot-border {
+//         max-height: 700px;
+//         width: 100%;
+//         border: 3px solid red;
+//         overflow: hidden;
+//         @include tablet {
+//             position: relative;
+//             left: 50%;
+//             transform: translate(-50%, 0%);
+//             max-width: 600px;
+//         }
+//     }
+//     img {
+//         position: relative;
+//         top: -2rem;
+//         object-fit: cover;
+//         transform: scale(1);
+//         width: 100%;
+//     }
+//     .headshot-btns {
+//         position: relative;
+//         transform: translate(0%, 0%);
+//         font-size: 5rem;
+//         font-weight: 500;
+//         border-width: medium;
+//         a {
+//             font-size: .9rem;
+//             &:hover {
+//                 text-decoration: none;
+//             }
+//         }
+//     }
+// }
 
-.dqt {
-    color: $primary-color;
+// .dqt {
+//     color: $primary-color;
+// }
+.intro-container {
+  background-image: url('/src/img/headshots/delbelheadshot.jpg');
+
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro-content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.spacing {
+  height: 50vh;
 }

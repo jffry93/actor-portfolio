@@ -1,29 +1,37 @@
-        //Homepage html Section
-        @import 'config.scss';
-        @import 'navbar.scss';
-        @import 'socialBar.scss';
-        @import 'mobile.scss';
-        @import 'home-headshot.scss';
-        @import 'home-reel.scss';
-        @import 'home-resume.scss';
-        @import 'footer.scss';
-        //Headshot html section
-        @import 'headshot.scss';
-        body {
-            overflow-x: hidden;
-            font-family: 'Montserrat', sans-serif;
-            color: white;
-            background: black;
-        }
-        
-        .my-container {
-            border: 3px solid red;
-        }
-        
-        .my-row {
-            border: 3px solid green;
-        }
-        
-        .my-col {
-            border: 3px solid blue;
-        }
+//DEFAULT SETTING
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background: black;
+}
+
+.my-container {
+  border: 3px solid red;
+}
+
+.my-row {
+  border: 3px solid green;
+}
+
+.my-col {
+  border: 3px solid blue;
+}
+
+//Homepage html Section
+@import 'config.scss';
+@import 'navbar.scss';
+@import 'socialBar.scss';
+@import 'mobile.scss';
+@import 'home-headshot.scss';
+@import 'home-reel.scss';
+@import 'home-resume.scss';
+@import 'footer.scss';
+//Headshot html section
+@import 'headshot.scss';

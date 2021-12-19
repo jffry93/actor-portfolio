@@ -1,27 +1,24 @@
 .reel-container {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    background: $primary-color;
-    h1 {
-        font-size: 3rem;
+  display: flex;
+  min-height: 100vh;
+  background: $primary-color;
+  .reel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    max-width: 1400px;
+    margin: auto;
+    .homepage-reel {
+      width: 100vw;
+      margin: auto;
+      max-width: 1400px;
+      padding: 2rem 6rem;
     }
-    video {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        width: 100%;
-        max-width: 1400px;
+    .reel-buttons {
+      display: flex;
+      gap: 1rem;
+      width: 60%;
     }
-    .reel-btns {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        max-width: 1140px;
-        padding: 0;
-        a {
-            margin-top: .5rem;
-            font-size: 1rem;
-        }
-    }
+  }
 }
