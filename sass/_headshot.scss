@@ -8,11 +8,12 @@
   .headshot-container {
     display: flex;
     height: calc(100vh - 5rem);
-    padding: 0 3rem;
+    padding: 0 6rem;
     border: red 3px solid;
     .small-img-container {
       flex: 1;
       display: flex;
+      gap: 2rem;
       flex-direction: column;
       border: purple 3px solid;
       .small-img-border {
@@ -23,6 +24,7 @@
         overflow: hidden;
         border: yellow 3px solid;
         position: relative;
+
         &:hover {
           .small-img {
             opacity: 1;
@@ -33,7 +35,8 @@
           z-index: 3;
           padding: 1rem;
           text-align: center;
-          font-weight: 800;
+          font-weight: 600;
+          font-size: 1.5rem;
           width: 100%;
           -webkit-user-select: none; /* Safari */
           -moz-user-select: none; /* Firefox */
@@ -46,9 +49,8 @@
         }
       }
       .active {
-        h4 {
-          font-size: 2rem;
-        }
+        //border: 1em white solid;
+
         img {
           opacity: 0.9 !important;
         }
@@ -58,12 +60,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       flex: 2;
-      height: 100%;
+
       border: blue 3px solid;
       .large-img {
-        height: calc(100vh - 10rem);
+        height: calc(100vh - 13rem);
         width: 100%;
         object-fit: contain;
       }
@@ -71,14 +73,15 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        padding: 1rem;
         border: green 3px solid;
         .download-btn {
-          width: 100%;
           text-align: center;
           padding: 1rem 2rem;
           border: yellow 3px solid;
           color: white;
           font-weight: 800;
+          font-size: 1.2rem;
           text-transform: uppercase;
         }
       }

@@ -1,26 +1,36 @@
 .resume-container {
-  min-height: 100vh;
   background: url(/src/img/jeshoots-com-pUAM5hPaCRI-unsplash.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 3px solid purple;
 }
 .resume-content {
-  padding: 5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+
   background-color: rgba(0, 0, 0, 0.3);
-  h1 {
-    margin: 0 0 3rem 0;
+  border: 3px solid yellow;
+  .resume-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 3px solid brown;
+    padding: 6rem 0rem 2rem;
+    h1 {
+      border: 3px solid blue;
+    }
   }
+
   .resume-border {
     width: 100%;
     max-width: 1400px;
     padding: 0 6rem;
+    border: 3px solid green;
     img {
       position: relative;
       left: 50%;
@@ -32,7 +42,12 @@
     }
   }
   .download-resume {
-    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 3px solid red;
+    padding: 2rem 0rem 6rem;
     a {
       background-color: white;
     }

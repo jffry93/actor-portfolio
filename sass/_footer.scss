@@ -77,6 +77,9 @@
 footer {
   width: 100%;
   background-color: grey;
+  h4 {
+    margin: 0 0 1rem;
+  }
   a {
     text-decoration: none;
     color: inherit;
@@ -85,52 +88,106 @@ footer {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  padding: 5rem 3rem;
+  padding: 3rem 6rem;
   max-width: 1400px;
   margin: auto;
-  .agency-info {
-    h1 {
-      margin: 0 0 2rem 0;
-    }
+
+  .dqt {
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     h2 {
-      margin: 0;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+    }
+    h3 {
+      letter-spacing: -2px;
+    }
+    h2,
+    h3 {
+      font-weight: 700;
+      font-style: italic;
+      line-height: 0.7;
+      text-shadow: 2px 2px 4px #5e5e5e;
+    }
+  }
+  .agency-info {
+    border: 3px solid pink;
+    h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
     .agent-contact {
       display: flex;
       flex-direction: column;
-      gap: 5px;
-      margin: 1.5rem 0 0 0;
+      border: 3px solid yellow;
+
       a {
-        margin: 1rem 0 0 0;
+        font-size: 0.7rem;
+        font-weight: 500;
+        margin: 0.5rem;
         svg {
-          margin: 0 1rem 0 0.5rem;
+          margin: 0 0.5rem 0 0;
+          width: 18px;
         }
+      }
+    }
+  }
+  .footer-portfolio {
+    border: 3px solid black;
+    h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .footer-portfolio-buttons {
+      display: flex;
+      flex-direction: column;
+      border: 3px solid orange;
+      a {
+        font-size: 0.7rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin: 0.5rem;
       }
     }
   }
   .social-media {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    h1 {
-      margin: 0 0 2rem 0;
+    border: 3px solid orange;
+    h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
     .social-icons {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      border: 3px solid green;
       a {
+        font-size: 0.7rem;
+        font-weight: 500;
         display: flex;
         align-items: center;
         gap: 5px;
         margin: 0.5rem;
+        svg {
+          width: 12px;
+          margin: 0 0.5rem 0 0;
+        }
       }
       .camera-icon {
-        margin: 5px 0;
+        margin: 0.5rem 0;
       }
     }
-    h4 {
-      margin: 2rem 0 0 0;
+    p {
+      margin: 1rem 0 0 0;
     }
   }
 }
@@ -143,6 +200,10 @@ footer {
   justify-content: center;
   background-color: #222222;
   p {
+    font-size: 0.6rem;
     margin: 0;
+    img {
+      height: 1.5rem;
+    }
   }
 }

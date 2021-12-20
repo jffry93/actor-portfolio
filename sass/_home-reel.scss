@@ -1,24 +1,46 @@
 .reel-container {
-  display: flex;
-  min-height: 100vh;
+  height: calc(100vh - 5rem);
   background: $primary-color;
+  border: 3px solid green;
   .reel-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 3rem 0;
+    height: calc(100vh - 5rem);
     max-width: 1400px;
+    border: 3px solid yellow;
     margin: auto;
+    .reel-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      border: 3px solid brown;
+      padding-top: 3rem;
+      h1 {
+        text-align: center;
+        border: 3px solid black;
+      }
+    }
     .homepage-reel {
-      width: 100vw;
-      margin: auto;
+      height: calc(75vh - 11rem);
+
       max-width: 1400px;
-      padding: 2rem 6rem;
+      padding: 0rem 6rem;
+      border: 3px solid purple;
+    }
+    .reel-download-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      border: 3px solid blue;
+      padding-bottom: 3rem;
     }
     .reel-buttons {
-      display: flex;
       gap: 1rem;
-      width: 60%;
+
+      border: 3px solid green;
     }
   }
 }

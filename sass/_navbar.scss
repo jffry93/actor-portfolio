@@ -1,6 +1,6 @@
 nav {
   position: sticky;
-  top: 0px;
+  top: 0;
   width: 100%;
   min-height: 5rem;
   background: black;
@@ -13,7 +13,7 @@ nav {
     max-width: 1400px;
     min-height: 5rem;
     margin: auto;
-    padding: 1rem 3rem;
+    padding: 1rem 6rem;
   }
   .logo {
     cursor: pointer;
