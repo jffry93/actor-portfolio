@@ -3,32 +3,32 @@ $primary-color: #de3333;
 /*--This effects all btn-lg buttons on the page--*/
 
 .btn {
-    border-radius: 0rem;
+  border-radius: 0rem;
 }
 
 .btn-lg {
-    border-radius: 0;
-    text-transform: uppercase;
-    font-size: 1rem;
-    border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-width: medium;
 }
 
 .btn-secondary {
-    color: #222222;
-    background-color: white;
-    border: .1rem solid white;
+  color: #222222;
+  background-color: white;
+  border: 0.1rem solid white;
 }
 
 .btn-primary {
-    color: $primary-color;
-    background-color: inherit;
-    border: solid $primary-color;
-    &:hover {
-        background-color: $primary-color!important;
-        border: .5px solid black;
-    }
+  color: $primary-color;
+  background-color: inherit;
+  border: solid $primary-color;
+  &:hover {
+    background-color: $primary-color !important;
+    border: 0.5px solid black;
+  }
 }
 
 .btn-primary:focus {
-    background-color: white!important;
+  background-color: white !important;
 }

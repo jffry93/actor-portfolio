@@ -85,7 +85,7 @@ footer {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  padding: 6rem 3rem;
+  padding: 5rem 3rem;
   max-width: 1400px;
   margin: auto;
   .agency-info {
@@ -99,7 +99,7 @@ footer {
       display: flex;
       flex-direction: column;
       gap: 5px;
-      margin: 2rem 0 0 0;
+      margin: 1.5rem 0 0 0;
       a {
         margin: 1rem 0 0 0;
         svg {
@@ -123,14 +123,14 @@ footer {
         display: flex;
         align-items: center;
         gap: 5px;
-        margin: 10px;
+        margin: 0.5rem;
       }
       .camera-icon {
         margin: 5px 0;
       }
     }
     h4 {
-      margin: 3rem 0 0 0;
+      margin: 2rem 0 0 0;
     }
   }
 }
