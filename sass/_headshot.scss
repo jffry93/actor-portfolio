@@ -23,9 +23,18 @@
         overflow: hidden;
         border: yellow 3px solid;
         position: relative;
+        &:hover {
+          .small-img {
+            opacity: 1;
+          }
+        }
         .small-img-title {
           position: absolute;
           z-index: 3;
+          padding: 1rem;
+          text-align: center;
+          font-weight: 800;
+          width: 100%;
           -webkit-user-select: none; /* Safari */
           -moz-user-select: none; /* Firefox */
           -ms-user-select: none; /* IE10+/Edge */
@@ -33,10 +42,15 @@
         }
         .small-img {
           width: 100%;
-          opacity: 1;
-          &:hover {
-            opacity: 0.5;
-          }
+          opacity: 0.3;
+        }
+      }
+      .active {
+        h4 {
+          font-size: 2rem;
+        }
+        img {
+          opacity: 0.9 !important;
         }
       }
     }
@@ -63,6 +77,9 @@
           text-align: center;
           padding: 1rem 2rem;
           border: yellow 3px solid;
+          color: white;
+          font-weight: 800;
+          text-transform: uppercase;
         }
       }
     }

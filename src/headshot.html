@@ -72,31 +72,29 @@
     <div class="headshot-section">
       <div class="headshot-container">
         <div class="small-img-container">
-          <div class="small-img-border">
-            <h4 class="small-img-title">HEADSHOT 1</h4>
+          <div class="small-img-border" onclick="selectHeadshotHandler(this);">
+            <h4 class="small-img-title">HEADSHOT #1</h4>
             <img
               id="click-on-load"
               class="small-img"
               src="img/headshots/delbelheadshot.jpg"
               alt="MatthewDelBelBelluzHeadshot1.jpg"
-              onclick="myFunction(this)"
             />
           </div>
-          <div class="small-img-border" onclick="myFunction(this);">
-            <h4 class="small-img-title">HEADSHOT 2</h4>
+          <div class="small-img-border" onclick="selectHeadshotHandler(this);">
+            <h4 class="small-img-title">HEADSHOT #2</h4>
             <img
               class="small-img"
               src="img/headshots/mdbb2.jpg"
               alt="MatthewDelBelBelluzHeadshot2.jpg"
             />
           </div>
-          <div class="small-img-border">
-            <h4 class="small-img-title">HEADSHOT 3</h4>
+          <div class="small-img-border" onclick="selectHeadshotHandler(this);">
+            <h4 class="small-img-title">HEADSHOT #3</h4>
             <img
               class="small-img"
               src="img/headshots/MDBB3.jpg"
               alt="MatthewDelBelBelluzHeadshot3.jpg"
-              onclick="myFunction(this);"
             />
           </div>
         </div>
@@ -111,23 +109,37 @@
       </div>
     </div>
     <script>
-      function myFunction(imgs) {
-        var expandImg = document.getElementById('expandedImg');
-        var imgText = document.getElementById('imgtext');
-        console.log(imgtext);
-        expandImg.src = imgs.src;
-        //testing dom
-        imgText.download = imgs.download;
-        imgText.href = imgs.src;
+      //NEW LOGIC
+      //GETTING THE PARENT SO I CAN GET DATA FROM ALL NODES
+      const selectHeadshotHandler = (pooPoo) => {
+        let largeHeadshot =
+          document.getElementsByClassName('main-img-container')[0];
 
-        //end testing
-        imgText.download = imgs.alt;
-        expandImg.parentElement.style.display = 'block';
-      }
-      let miniHeadshot = document.getElementsByClassName('small-img-border');
+        //MAKE LARGE IMAGE THE SMALL IMAGE CLICKED ON
+        largeHeadshot.childNodes[1].childNodes[1].src =
+          pooPoo.childNodes[3].src;
+        //CHANGE DOWNLOAD BUTTON FILE
+        //Set File Name
+        largeHeadshot.childNodes[3].childNodes[1].download =
+          pooPoo.childNodes[3].alt;
+        //Set File Downloading
+        largeHeadshot.childNodes[3].childNodes[1].href =
+          pooPoo.childNodes[3].src;
+        //CHANGE DOWNLOAD BUTTON TEXT
+        largeHeadshot.childNodes[3].childNodes[1].innerHTML = `Download ${pooPoo.childNodes[1].innerHTML}`;
+        //ADD AND REMOVE SELECTED STYLE CLASS
+        const mainNode = document.getElementsByClassName('small-img-border');
+        //Make HTMLCollection an array
+        let arr = [...mainNode];
+        //Loop through array and remove active class
+        arr.forEach(function (img) {
+          img.classList.remove('active');
+        });
+        //ADD ACTIVE CLASS TO ELEMENT CLICKED
+        pooPoo.classList.add('active');
+      };
 
-      console.log(miniHeadshot[0].childNodes[3]);
-
+      //CLICK ON FIRST HEADSHOT IMAGE
       window.setTimeout(clickit, 0);
 
       function clickit() {
