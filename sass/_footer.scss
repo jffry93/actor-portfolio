@@ -75,6 +75,8 @@
 //     text-decoration: none;
 // }
 footer {
+  position: relative;
+  top: 5rem;
   width: 100%;
   background-color: grey;
   h4 {
@@ -86,17 +88,25 @@ footer {
   }
 }
 .footer-content {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 2rem;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'logo name name name'
+    'contact portfolio attribute social';
   padding: 3rem 6rem;
   max-width: 1400px;
   margin: auto;
 
   .dqt {
+    grid-area: logo;
     border: 3px solid red;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
     h2 {
       letter-spacing: -1px;
       text-transform: uppercase;
@@ -112,7 +122,41 @@ footer {
       text-shadow: 2px 2px 4px #5e5e5e;
     }
   }
+  .mdbb {
+    grid-area: name;
+    border: blue 3px solid;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    h3 {
+      margin: 0;
+      font-weight: 500;
+      letter-spacing: -1px;
+    }
+  }
+  .player-info {
+    grid-area: attribute;
+    h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .skill-list {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.7rem;
+      font-weight: 500;
+      margin: 0.5rem;
+      .skill {
+        margin: 0 1rem 0 0;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
   .agency-info {
+    grid-area: contact;
     border: 3px solid pink;
     h4 {
       font-size: 0.9rem;
@@ -137,6 +181,7 @@ footer {
     }
   }
   .footer-portfolio {
+    grid-area: portfolio;
     border: 3px solid black;
     h4 {
       font-size: 0.9rem;
@@ -157,6 +202,7 @@ footer {
     }
   }
   .social-media {
+    grid-area: social;
     display: flex;
     flex-direction: column;
     border: 3px solid orange;
@@ -181,9 +227,6 @@ footer {
           width: 12px;
           margin: 0 0.5rem 0 0;
         }
-      }
-      .camera-icon {
-        margin: 0.5rem 0;
       }
     }
     p {

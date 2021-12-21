@@ -1,4 +1,6 @@
 .intro-container {
+  position: relative;
+  top: 5rem;
   background-image: url('/src/img/headshots/delbelheadshot.jpg');
 
   /* Set a specific height */
@@ -9,14 +11,18 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  .background-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 .intro-content {
+  position: relative;
+  top: -5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
   padding: 0 3rem;
 }
 .spacing {

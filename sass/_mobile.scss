@@ -476,8 +476,14 @@
     }
   }
   .footer-content {
-    flex-direction: column;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'logo logo . .'
+      'contact contact portfolio portfolio'
+      'attribute attribute social social ' !important;
 
     .social-media {
       .social-icons {
@@ -519,7 +525,6 @@
     }
   }
 }
-
 @media (max-width: 799.98px) {
   .homepage-reel {
     padding: 3rem 0rem !important;
@@ -609,6 +614,17 @@
       }
     }
   }
+  .footer-content {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'logo .'
+      'contact contact '
+      'attribute portfolio'
+      ' social social' !important;
+  }
 }
 //medium-Mobile
 @media (max-width: 389.98px) {
@@ -631,6 +647,18 @@
         }
       }
     }
+  }
+  .footer-content {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'logo .'
+      'contact contact '
+      'portfolio portfolio'
+      'attribute attribute'
+      ' social social' !important;
   }
 }
 //sma;;-mobile

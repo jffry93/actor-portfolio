@@ -1,4 +1,6 @@
 .resume-container {
+  position: relative;
+  top: 5rem;
   background: url(/src/img/jeshoots-com-pUAM5hPaCRI-unsplash.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -20,7 +22,7 @@
     justify-content: center;
     width: 100%;
     border: 3px solid brown;
-    padding: 6rem 0rem 2rem;
+    padding: 3rem 0rem 2rem;
     h1 {
       border: 3px solid blue;
     }
@@ -47,7 +49,7 @@
     justify-content: center;
     width: 100%;
     border: 3px solid red;
-    padding: 2rem 0rem 6rem;
+    padding: 2rem 0rem 3rem;
     a {
       background-color: white;
     }

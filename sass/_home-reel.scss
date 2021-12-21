@@ -1,4 +1,6 @@
 .reel-container {
+  position: relative;
+  top: 5rem;
   height: calc(100vh - 5rem);
   background: $primary-color;
   border: 3px solid green;
