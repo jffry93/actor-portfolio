@@ -24,5 +24,7 @@
   padding: 0 3rem;
 }
 .spacing {
-  height: calc(50vh - 5rem);
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  align-items: center;
 }

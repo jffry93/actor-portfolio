@@ -37,6 +37,9 @@ nav {
       left: -20px !important;
       background: black;
       border-radius: 2%;
+      .active {
+        background-color: inherit;
+      }
       a:hover,
       a:focus {
         background-color: $primary-color;
@@ -55,6 +58,7 @@ nav {
   }
   .active {
     color: $primary-color !important;
+
     &:hover,
     &:focus {
       color: white !important;
