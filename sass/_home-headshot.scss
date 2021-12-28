@@ -4,7 +4,7 @@
   background-image: url('/src/img/headshots/delbelheadshot.jpg');
 
   /* Set a specific height */
-  min-height: 100vh;
+  min-height: calc(100vh - 5rem);
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -16,15 +16,13 @@
   }
 }
 .intro-content {
-  position: relative;
-  top: -5rem;
+  min-height: calc(100vh - 5rem);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0 3rem;
 }
 .spacing {
-  height: 50vh;
+  height: calc(50vh - 5rem);
 }

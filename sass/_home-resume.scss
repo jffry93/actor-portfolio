@@ -24,6 +24,10 @@
     border: 3px solid brown;
     padding: 3rem 0rem 2rem;
     h1 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       border: 3px solid blue;
     }
   }
@@ -51,7 +55,15 @@
     border: 3px solid red;
     padding: 2rem 0rem 3rem;
     a {
-      background-color: white;
+      border: 3px solid white;
+      padding: 0.5rem 3rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      letter-spacing: -1px;
+      color: white;
+      background-color: grey;
     }
   }
 }

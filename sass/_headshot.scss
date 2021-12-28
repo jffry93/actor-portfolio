@@ -9,45 +9,85 @@
   }
   .headshot-container {
     display: flex;
+    gap: 1rem;
+    justify-content: center;
     height: calc(100vh - 5rem);
     padding: 0 6rem;
-    border: red 3px solid;
+    //border: red 3px solid;
     .small-img-container {
-      flex: 1;
+      position: relative;
       display: flex;
-      gap: 2rem;
+      gap: 1rem;
       flex-direction: column;
-      border: purple 3px solid;
+      // border: purple 3px solid;
       .small-img-border {
-        display: flex;
-        align-items: center; /* vertical */
-        justify-content: center; /* horizontal */
-        height: calc((100vh - 5rem) / 3);
+        //max-height: calc((100vh - 5rem) / 3);
         overflow: hidden;
-        border: yellow 3px solid;
+        border: white 3px solid;
         position: relative;
-
+        height: 10rem;
         &:hover {
           .small-img {
             opacity: 1;
           }
         }
-        .small-img-title {
-          position: absolute;
-          z-index: 3;
-          padding: 1rem;
-          text-align: center;
-          font-weight: 600;
-          font-size: 1.5rem;
-          width: 100%;
-          -webkit-user-select: none; /* Safari */
-          -moz-user-select: none; /* Firefox */
-          -ms-user-select: none; /* IE10+/Edge */
-          user-select: none; /* Standard */
-        }
-        .small-img {
-          width: 100%;
-          opacity: 0.3;
+        .headshot-buttons-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 100%;
+          // border: 3px solid pink;
+          .view-headshot-button,
+          .download-headshot-button {
+            display: flex;
+            align-items: center;
+            height: 100%;
+          }
+          .view-headshot-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 2rem 3rem;
+            h4 {
+              font-size: 1.1rem;
+              text-transform: uppercase;
+              font-weight: 600;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+              letter-spacing: -1px;
+              -webkit-user-select: none; /* Safari */
+              -moz-user-select: none; /* Firefox */
+              -ms-user-select: none; /* IE10+/Edge */
+              user-select: none; /* Standard */
+            }
+            .small-img {
+              position: absolute;
+              width: 100%;
+              opacity: 0.3;
+            }
+          }
+          .download-headshot-button {
+            width: 100%;
+            background-color: grey;
+            color: white;
+            z-index: 1;
+            border-top: white 3px solid;
+            text-decoration: none;
+            h4 {
+              font-size: 1.1rem;
+              text-transform: uppercase;
+              font-weight: 600;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+              letter-spacing: -1px;
+              margin: auto;
+              padding: 0.5rem;
+              -webkit-user-select: none; /* Safari */
+              -moz-user-select: none; /* Firefox */
+              -ms-user-select: none; /* IE10+/Edge */
+              user-select: none; /* Standard */
+            }
+          }
         }
       }
       .active {
@@ -59,33 +99,12 @@
       }
     }
     .main-img-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      flex: 2;
+      margin-bottom: 1rem;
+      // border: blue 3px solid;
 
-      border: blue 3px solid;
       .large-img {
-        height: calc(100vh - 13rem);
-        width: 100%;
-        object-fit: contain;
-      }
-      .download-container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 1rem;
-        border: green 3px solid;
-        .download-btn {
-          text-align: center;
-          padding: 1rem 2rem;
-          border: yellow 3px solid;
-          color: white;
-          font-weight: 800;
-          font-size: 1.2rem;
-          text-transform: uppercase;
-        }
+        border: white 3px solid;
+        height: 100%;
       }
     }
   }
