@@ -5,7 +5,7 @@
 
   /* Set a specific height */
   min-height: calc(100vh - 5rem);
-
+  overflow: hidden;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -21,10 +21,214 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0 3rem;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 6rem;
+  span {
+    color: $primary-color;
+    text-shadow: none;
+  }
 }
 .spacing {
+  width: 100%;
+  position: relative;
   min-height: calc(100vh - 5rem);
   display: flex;
+  justify-content: center;
   align-items: center;
+  border: 3px solid blue;
+  .first-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .intro-welcome {
+      font-size: 6rem;
+      font-weight: 700;
+      letter-spacing: -3px;
+      line-height: 0.7;
+      text-shadow: 2px 2px 4px #5e5e5e;
+      position: absolute;
+      top: 45%;
+      transform: translate(100%, -50%);
+    }
+    .scroll-down {
+      position: absolute;
+      bottom: 2rem;
+      transform: translate(0%, 50%);
+    }
+    .flashing {
+      -webkit-animation: fadein 2s infinite; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s infinite; /* Firefox < 16 */
+      -ms-animation: fadein 2s infinite; /* Internet Explorer */
+      -o-animation: fadein 2s infinite; /* Opera < 12.1 */
+      animation: fadein 2s infinite;
+    }
+  }
+  .second-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    justify-content: center;
+    align-items: flex-end;
+    h1,
+    h2,
+    h4 {
+      letter-spacing: -1px;
+      line-height: 1;
+      text-shadow: 2px 2px 4px #5e5e5e;
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 3rem;
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 5rem;
+    }
+    h1 {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 6rem;
+    }
+    .billingual {
+      font-style: italic;
+    }
+  }
+  .third-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    h1,
+    h2 {
+      letter-spacing: -1px;
+      line-height: 1;
+      text-shadow: 2px 2px 4px #5e5e5e;
+      text-transform: capitalize;
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 4rem;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 5rem;
+    }
+  }
+  .forth-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.5rem;
+    h2,
+    h3 {
+      font-weight: 700;
+      letter-spacing: -3px;
+      line-height: 1;
+      text-shadow: 2px 2px 4px #5e5e5e;
+      text-transform: capitalize;
+      font-style: italic;
+    }
+    h3 {
+      font-size: 6rem;
+    }
+    h2 {
+      font-size: 7rem;
+    }
+  }
+  .fifth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(0, 0%);
+    h2,
+    h3,
+    h1 {
+      letter-spacing: -1px;
+      line-height: 1;
+      text-shadow: 2px 2px 4px #5e5e5e;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 5rem;
+    }
+    h2 {
+      text-transform: capitalize;
+      font-weight: 600;
+      font-size: 4.5rem;
+    }
+    h3 {
+      font-weight: 400;
+      font-size: 3rem;
+    }
+  }
+}
+
+//ANIMATIONS
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
