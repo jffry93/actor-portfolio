@@ -68,7 +68,7 @@ gsap.to('.fifth-container', {
     start: 'top 45%',
     end: '+=30%',
     scrub: true,
-    markers: true,
+    //markers: true,
     toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
   x: 0,

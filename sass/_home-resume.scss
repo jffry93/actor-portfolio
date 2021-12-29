@@ -6,7 +6,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 3px solid purple;
+  //border: 3px solid purple;
 }
 .resume-content {
   display: flex;
@@ -15,20 +15,20 @@
   justify-content: center;
 
   background-color: rgba(0, 0, 0, 0.3);
-  border: 3px solid yellow;
+  //border: 3px solid yellow;
   .resume-title {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    border: 3px solid brown;
+    //border: 3px solid brown;
     padding: 3rem 0rem 2rem;
     h1 {
       font-size: 2rem;
       text-transform: uppercase;
       font-weight: 700;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-      border: 3px solid blue;
+      //border: 3px solid blue;
     }
   }
 
@@ -36,7 +36,7 @@
     width: 100%;
     max-width: 1400px;
     padding: 0 6rem;
-    border: 3px solid green;
+    //border: 3px solid green;
     img {
       position: relative;
       left: 50%;
@@ -52,7 +52,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    border: 3px solid red;
+    //border: 3px solid red;
     padding: 2rem 0rem 3rem;
     a {
       border: 3px solid white;

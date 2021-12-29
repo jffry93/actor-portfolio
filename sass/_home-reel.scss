@@ -3,21 +3,21 @@
   top: 5rem;
   height: calc(100vh - 5rem);
   background: $primary-color;
-  border: 3px solid green;
+  //border: 3px solid green;
   .reel-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     max-width: 1400px;
-    border: 3px solid yellow;
+    //border: 3px solid yellow;
     margin: auto;
     .reel-title {
       display: flex;
       align-items: center;
       justify-content: center;
 
-      border: 3px solid brown;
+      //border: 3px solid brown;
       padding: 3rem 0 1rem;
       h1 {
         font-size: 2rem;
@@ -25,7 +25,7 @@
         font-weight: 700;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         text-align: center;
-        border: 3px solid black;
+        //border: 3px solid black;
         margin: 0;
       }
     }
@@ -35,14 +35,14 @@
       max-width: 1400px;
       margin: auto;
       padding: 0rem 6rem;
-      border: 3px solid purple;
+      //border: 3px solid purple;
     }
     .reel-download-container {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
-      border: 3px solid blue;
+      //border: 3px solid blue;
       padding: 1rem 0 3rem;
       a {
         border: 3px solid white;
