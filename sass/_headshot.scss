@@ -19,6 +19,12 @@
       display: flex;
       gap: 1rem;
       flex-direction: column;
+      -webkit-animation: fadeinsmall 0.7s ease; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadeinsmall 0.7s ease; /* Firefox < 16 */
+      -ms-animation: fadeinsmall 0.7s ease; /* Internet Explorer */
+      -o-animation: fadeinsmall 0.7s ease; /* Opera < 12.1 */
+      animation: fadeinsmall 0.7s ease;
+
       // border: purple 3px solid;
       .small-img-border {
         //max-height: calc((100vh - 5rem) / 3);
@@ -100,6 +106,11 @@
     }
     .main-img-container {
       margin-bottom: 1rem;
+      -webkit-animation: fadeinlarge 0.7s ease; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadeinlarge 0.7s ease; /* Firefox < 16 */
+      -ms-animation: fadeinlarge 0.7s ease; /* Internet Explorer */
+      -o-animation: fadeinlarge 0.7s ease; /* Opera < 12.1 */
+      animation: fadeinlarge 0.7s ease;
       // border: blue 3px solid;
 
       .large-img {
@@ -107,5 +118,127 @@
         height: 100%;
       }
     }
+  }
+}
+
+//fade in small imgs
+//ANIMATIONS
+@keyframes fadeinsmall {
+  0% {
+    opacity: 0;
+    transform: translate(-15%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinsmall {
+  0% {
+    opacity: 0;
+    transform: translate(-15%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinsmall {
+  0% {
+    opacity: 0;
+    transform: translate(-15%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinsmall {
+  0% {
+    opacity: 0;
+    transform: translate(-15%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinsmall {
+  0% {
+    opacity: 0;
+    transform: translate(-15%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+//fade in larger imgs
+//ANIMATIONS
+@keyframes fadeinlarge {
+  0% {
+    opacity: 0;
+    transform: translate(15%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinlarge {
+  0% {
+    opacity: 0;
+    transform: translate(15%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinlarge {
+  0% {
+    opacity: 0;
+    transform: translate(15%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinlarge {
+  0% {
+    opacity: 0;
+    transform: translate(15%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinlarge {
+  0% {
+    opacity: 0;
+    transform: translate(15%, 0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%);
   }
 }

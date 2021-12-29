@@ -51,7 +51,7 @@
       text-shadow: 2px 2px 4px #5e5e5e;
       position: absolute;
       top: 45%;
-      transform: translate(100%, -50%);
+      transform: translate(0%, -45%);
     }
     .scroll-down {
       position: absolute;
@@ -73,6 +73,8 @@
     row-gap: 0.5rem;
     justify-content: center;
     align-items: flex-end;
+    transform: translate(50%, 0%);
+    opacity: 0;
     h1,
     h2,
     h4 {
@@ -101,6 +103,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    transform: scale(3, 3);
+    opacity: 0;
     h1,
     h2 {
       letter-spacing: -1px;
@@ -123,6 +127,8 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 0.5rem;
+    transform: translate(50%, 0%);
+    opacity: 0;
     h2,
     h3 {
       font-weight: 700;
@@ -143,7 +149,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: translate(0, 0%);
+    transform: scale(3, 3);
+    opacity: 0;
     h2,
     h3,
     h1 {
