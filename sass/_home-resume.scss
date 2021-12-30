@@ -11,39 +11,35 @@
   border: 3px solid purple;
 }
 .resume-content {
+  max-width: 1400px;
+  padding: 3rem 6rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   row-gap: 2rem;
   background-color: rgba(0, 0, 0, 0.3);
   border: 3px solid yellow;
-  padding: 3rem 0;
   height: 100%;
   .resume-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
     border: 3px solid brown;
-
-    h1 {
-      font-size: 2rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-      border: 3px solid blue;
-    }
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   .resume-border {
-    max-width: 1400px;
-    padding: 0 6rem;
     border: 3px solid green;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    max-height: calc(90vh - 15rem);
     img {
-      height: calc(70vh - 5rem);
-      object-fit: cover;
+      height: 100%;
+      object-fit: contain;
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
         0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     }

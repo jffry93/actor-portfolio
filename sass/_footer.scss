@@ -80,7 +80,7 @@ footer {
   width: 100%;
   background-color: grey;
   h4 {
-    margin: 0 0 1rem;
+    margin: 0 0 2rem;
     text-align: center;
   }
   a {
@@ -104,7 +104,7 @@ footer {
 
   .dqt {
     grid-area: logo;
-    border: 3px solid red;
+    //border: 3px solid red;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -126,7 +126,7 @@ footer {
   }
   .mdbb {
     grid-area: name;
-    border: blue 3px solid;
+    //border: blue 3px solid;
     display: flex;
     justify-content: flex-end;
     gap: 0.5rem;
@@ -159,7 +159,7 @@ footer {
   }
   .agency-info {
     grid-area: contact;
-    border: 3px solid pink;
+    //border: 3px solid pink;
     h4 {
       font-size: 0.9rem;
       font-weight: 700;
@@ -169,7 +169,7 @@ footer {
     .agent-contact {
       display: flex;
       flex-direction: column;
-      border: 3px solid yellow;
+      //border: 3px solid yellow;
 
       a {
         display: grid;
@@ -192,7 +192,7 @@ footer {
   }
   .footer-portfolio {
     grid-area: portfolio;
-    border: 3px solid black;
+    //border: 3px solid black;
     h4 {
       font-size: 0.9rem;
       font-weight: 700;
@@ -202,7 +202,7 @@ footer {
     .footer-portfolio-buttons {
       display: flex;
       flex-direction: column;
-      border: 3px solid orange;
+      //border: 3px solid orange;
       a {
         font-size: 0.7rem;
         font-weight: 500;
@@ -215,7 +215,7 @@ footer {
     grid-area: social;
     display: flex;
     flex-direction: column;
-    border: 3px solid orange;
+    //border: 3px solid orange;
     h4 {
       font-size: 0.9rem;
       font-weight: 700;
@@ -225,7 +225,7 @@ footer {
     .social-icons {
       display: flex;
       flex-direction: column;
-      border: 3px solid green;
+      //border: 3px solid green;
       a {
         display: grid;
         grid-template-columns: 1fr 1fr 3fr;

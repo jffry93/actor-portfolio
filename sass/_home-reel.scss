@@ -2,8 +2,9 @@
   position: relative;
   top: 5rem;
   height: calc(100vh - 5rem);
+  min-height: 400px;
   background: $primary-color;
-  border: 3px solid green;
+  // border: 3px solid green;
   display: flex;
   .reel-content {
     display: flex;
@@ -11,13 +12,13 @@
     justify-content: center;
     row-gap: 2rem;
     max-width: 1400px;
-    border: 3px solid yellow;
+    // border: 3px solid yellow;
     margin: auto;
     .reel-title {
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 3px solid brown;
+      // border: 3px solid brown;
       padding: 3rem 0 1rem;
       max-height: 15vh;
       h1 {
@@ -26,25 +27,26 @@
         font-weight: 700;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         text-align: center;
-        border: 3px solid black;
+        // border: 3px solid black;
         margin: 0;
       }
     }
     .homepage-reel {
       max-height: calc(75vh - 12rem);
       height: auto;
+      min-height: 200px;
       width: 100%;
       max-width: 1400px;
       margin: auto;
       padding: 0rem 6rem;
-      border: 3px solid purple;
+      // border: 3px solid purple;
     }
     .reel-download-container {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
-      border: 3px solid blue;
+      // border: 3px solid blue;
       padding: 1rem 0 3rem;
       max-height: 15vh;
       a {
