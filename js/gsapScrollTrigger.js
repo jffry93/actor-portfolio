@@ -1,19 +1,77 @@
+//INTRO CONTAINER ANIMATION
 //Welcome Heading
-gsap.to('.intro-welcome', {
+gsap.to('.welcome-1', {
   scrollTrigger: {
     trigger: '.intro-welcome',
-    start: 'top 45%',
+    start: 'center center',
     end: '+=50%',
     pin: true,
     scrub: true,
-    //markers: true,
-    toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
+    // markers: true,
+    toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
-  scaleX: 3,
-  scaleY: 3,
+
+  x: -600,
   opacity: 0,
 });
+//to my
+gsap.to('.welcome-2', {
+  scrollTrigger: {
+    trigger: '.intro-welcome',
+    start: 'center center',
+    end: '+=50%',
+    //pin: true,
+    scrub: true,
+    //markers: true,
+    toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
+  },
 
+  x: -800,
+  opacity: 0,
+});
+gsap.to('.welcome-3', {
+  scrollTrigger: {
+    trigger: '.intro-welcome',
+    start: 'center center',
+    end: '+=50%',
+    //pin: true,
+    scrub: true,
+    // markers: true,
+    toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
+  },
+
+  x: 800,
+  opacity: 0,
+});
+gsap.to('.welcome-4', {
+  scrollTrigger: {
+    trigger: '.intro-welcome',
+    start: 'center center',
+    end: '+=50%',
+    //pin: true,
+    scrub: true,
+    // markers: true,
+    toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
+  },
+  x: 600,
+  opacity: 0,
+});
+//scroll-down
+gsap.to('.scroll-down', {
+  scrollTrigger: {
+    trigger: '.intro-welcome',
+    start: 'center center',
+    end: '+=5%',
+    scrub: true,
+    //markers: true,
+    toggleClass: { targets: '.scroll-down', class: 'flashing' },
+    toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
+  },
+  opacity: 0,
+  display: 'none',
+});
+
+//LANGUAGE-CONTAINER
 //billingual
 gsap.to('.second-container', {
   scrollTrigger: {
@@ -25,11 +83,26 @@ gsap.to('.second-container', {
     toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
   x: 0,
+  //duration: 0.7,
+  opacity: 1,
+});
+
+//LOCATION CONTAINER
+gsap.to('.location-container', {
+  scrollTrigger: {
+    trigger: '.location-container',
+    start: 'top 80%',
+    end: '+=30%',
+    scrub: true,
+    //markers: true,
+    toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
+  },
+  x: 0,
   duration: 0.7,
   opacity: 1,
 });
 
-//10 years
+//EXPERIENCE CONTAINER
 gsap.to('.third-container', {
   scrollTrigger: {
     trigger: '.third-container',
@@ -46,8 +119,59 @@ gsap.to('.third-container', {
   scaleY: 1,
 });
 
-//Dark Quadruple Threat
-gsap.to('.forth-container', {
+//QUADRUPLE CONTAINER
+gsap.to('.training-title', {
+  scrollTrigger: {
+    trigger: '.forth-container',
+    start: 'top 60%',
+    end: '+=10%',
+    scrub: true,
+    //markers: true,
+    toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
+  },
+
+  opacity: 1,
+});
+gsap.to('.training-1', {
+  scrollTrigger: {
+    trigger: '.forth-container',
+    start: 'top 60%',
+    end: '+=20%',
+    scrub: true,
+    //markers: true,
+    toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
+  },
+  x: 0,
+  duration: 0.7,
+  opacity: 1,
+});
+gsap.to('.training-3', {
+  scrollTrigger: {
+    trigger: '.forth-container',
+    start: 'top 60%',
+    end: '+=25%',
+    scrub: true,
+    //markers: true,
+    toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
+  },
+  x: 0,
+  duration: 0.7,
+  opacity: 1,
+});
+gsap.to('.training-2', {
+  scrollTrigger: {
+    trigger: '.forth-container',
+    start: 'top 60%',
+    end: '+=20%',
+    scrub: true,
+    //markers: true,
+    toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
+  },
+  x: 0,
+  duration: 0.7,
+  opacity: 1,
+});
+gsap.to('.training-4', {
   scrollTrigger: {
     trigger: '.forth-container',
     start: 'top 60%',
