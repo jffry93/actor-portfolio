@@ -25,7 +25,6 @@
     />
   </head>
 
-  <!-- <body data-spy="scroll" data-target=".scroll" data-offset="50"> -->
   <body data-spy="scroll" data-target=".scroll" data-offset="50">
     <!-- Navigation -->
     <nav class="scroll">
@@ -52,9 +51,9 @@
                 class="dropdown-menu px-2"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" href="#headshot-scroll">Headshots</a>
+                <a class="dropdown-item" href="headshot.html">Headshots</a>
                 <a class="dropdown-item" href="reel.html">Reels</a>
-                <a class="dropdown-item" href="resume.html">Resume</a>
+                <a class="dropdown-item" href="#resume-scroll">Resume</a>
               </div>
             </li>
             <li class="nav-item">
@@ -68,88 +67,28 @@
       </div>
     </nav>
     <!-- End Navigation -->
-    <div id="headshot-scroll"></div>
-    <div class="headshot-section">
-      <div class="headshot-container">
-        <div class="small-img-container">
-          <div class="small-img-border">
-            <div class="headshot-buttons-container">
-              <div
-                class="view-headshot-button"
-                onclick="selectHeadshotHandler(this);"
-              >
-                <h4>Preview</h4>
-                <img
-                  id="click-on-load"
-                  class="small-img"
-                  src="img/headshots/delbelheadshot.jpg"
-                  alt="Headshot#1"
-                />
-              </div>
-              <a
-                class="download-headshot-button"
-                href="img/headshots/delbelheadshot.jpg"
-                download="MatthewDelBelBelluzHeadshot1.jpg"
-              >
-                <h4>Download</h4>
-              </a>
-            </div>
-          </div>
-          <div class="small-img-border">
-            <div class="headshot-buttons-container">
-              <div
-                class="view-headshot-button"
-                onclick="selectHeadshotHandler(this);"
-              >
-                <h4>Preview</h4>
-                <img
-                  class="small-img"
-                  src="img/headshots/mdbb2.jpg"
-                  alt="Headshot#2"
-                />
-              </div>
-              <a
-                class="download-headshot-button"
-                href="img/headshots/mdbb2.jpg"
-                download="MatthewDelBelBelluzHeadshot2.jpg"
-              >
-                <h4>Download</h4>
-              </a>
-            </div>
-          </div>
-          <div class="small-img-border">
-            <div class="headshot-buttons-container">
-              <div
-                class="view-headshot-button"
-                onclick="selectHeadshotHandler(this);"
-              >
-                <h4>Preview</h4>
-                <img
-                  class="small-img"
-                  src="img/headshots/MDBB3.jpg"
-                  alt="Headshot#3"
-                />
-              </div>
-              <a
-                class="download-headshot-button"
-                href="img/headshots/MDBB3.jpg"
-                download="MatthewDelBelBelluzHeadshot3.jpg"
-              >
-                <h4>Download</h4>
-              </a>
-            </div>
-          </div>
+    <!--HEADING-->
+    <!-- Headshot Section -->
+
+    <!--RESUME CONTAINER-->
+    <div id="resume-scroll"></div>
+    <div class="resume-container">
+      <div class="resume-content">
+        <h1 class="resume-title">Resume</h1>
+        <div class="resume-border">
+          <img src="resume/MatthewDelBelBelluz_CV2021.jpg" alt="Resume" />
         </div>
-        <div class="main-img-container">
-          <img
-            id="expandedImg"
-            class="large-img"
-            src="img/headshots/delbelheadshot.jpg"
-            alt="Headshot#1"
-          />
+        <div class="download-resume">
+          <a
+            href="resume/MatthewDelBelBelluz_CV2021.pdf"
+            download="MatthewDelBelBelluz_CV2021.pdf"
+            class="resume-btn"
+            >Download Resume</a
+          >
         </div>
       </div>
     </div>
+
     <!-- Start Footer -->
     <div id="contact-scroll"></div>
     <footer>
@@ -286,11 +225,7 @@
       </div>
       <!-- End Socket -->
     </footer>
-    <!-- scroll trigger animation -->
 
-    <!-- End Footer -->
-    <!-- HEADSHOT LOGIC -->
-    <script src="js/headshotHandler.js"></script>
     <!-- Script Source Files -->
     <!-- jQuery -->
     <script src="js/jquery-3.5.1.min.js "></script>
@@ -316,7 +251,7 @@
       integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
       crossorigin="anonymous"
     ></script>
-    <!-- GSAP ScrollTrigger -->
+    <!-- GSAP Scroll Trigger Animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 

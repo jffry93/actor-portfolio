@@ -2,7 +2,7 @@
   position: sticky;
   top: 5rem;
   scroll-snap-align: center;
-  //width: 100%;
+  width: 100%;
   background-image: url('../img/headshots/delbelheadshot.jpg');
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
@@ -16,6 +16,7 @@
   .background-overlay {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
   }
 }
 .intro-content {
