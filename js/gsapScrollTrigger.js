@@ -2,12 +2,13 @@
 //Welcome Heading
 gsap.to('.welcome-1', {
   scrollTrigger: {
+    scroller: '.intro-container',
     trigger: '.intro-welcome',
     start: 'center center',
     end: '+=50%',
     pin: true,
-    scrub: true,
-    // markers: true,
+    scrub: 1,
+    markers: true,
     toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
 
@@ -17,11 +18,12 @@ gsap.to('.welcome-1', {
 //to my
 gsap.to('.welcome-2', {
   scrollTrigger: {
+    scroller: '.intro-container',
     trigger: '.intro-welcome',
     start: 'center center',
     end: '+=50%',
-    //pin: true,
-    scrub: true,
+    pin: true,
+    scrub: 1,
     //markers: true,
     toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
@@ -31,11 +33,12 @@ gsap.to('.welcome-2', {
 });
 gsap.to('.welcome-3', {
   scrollTrigger: {
+    scroller: '.intro-container',
     trigger: '.intro-welcome',
     start: 'center center',
     end: '+=50%',
-    //pin: true,
-    scrub: true,
+    pin: true,
+    scrub: 1,
     // markers: true,
     toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
@@ -45,11 +48,12 @@ gsap.to('.welcome-3', {
 });
 gsap.to('.welcome-4', {
   scrollTrigger: {
+    scroller: '.intro-container',
     trigger: '.intro-welcome',
     start: 'center center',
     end: '+=50%',
-    //pin: true,
-    scrub: true,
+    pin: true,
+    scrub: 1,
     // markers: true,
     toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
@@ -59,11 +63,13 @@ gsap.to('.welcome-4', {
 //scroll-down
 gsap.to('.scroll-down', {
   scrollTrigger: {
+    scroller: '.intro-container',
     trigger: '.intro-welcome',
     start: 'center center',
     end: '+=5%',
     scrub: true,
-    //markers: true,
+    pin: true,
+    markers: true,
     toggleClass: { targets: '.scroll-down', class: 'flashing' },
     toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
@@ -75,6 +81,7 @@ gsap.to('.scroll-down', {
 //billingual
 gsap.to('.second-container', {
   scrollTrigger: {
+    scroller: '.intro-container',
     trigger: '.second-container',
     start: 'top 80%',
     end: '+=30%',
@@ -90,6 +97,7 @@ gsap.to('.second-container', {
 //LOCATION CONTAINER
 gsap.to('.location-container', {
   scrollTrigger: {
+    scroller: '.intro-container',
     trigger: '.location-container',
     start: 'top 80%',
     end: '+=30%',
@@ -105,6 +113,7 @@ gsap.to('.location-container', {
 //EXPERIENCE CONTAINER
 gsap.to('.third-container', {
   scrollTrigger: {
+    scroller: '.intro-container',
     trigger: '.third-container',
     start: 'top 45%',
     end: '+=30%',
@@ -122,6 +131,7 @@ gsap.to('.third-container', {
 //QUADRUPLE CONTAINER
 gsap.to('.training-title', {
   scrollTrigger: {
+    scroller: '.intro-container',
     trigger: '.forth-container',
     start: 'top 60%',
     end: '+=10%',
@@ -134,6 +144,7 @@ gsap.to('.training-title', {
 });
 gsap.to('.training-1', {
   scrollTrigger: {
+    scroller: '.intro-container',
     trigger: '.forth-container',
     start: 'top 60%',
     end: '+=20%',
@@ -147,6 +158,7 @@ gsap.to('.training-1', {
 });
 gsap.to('.training-3', {
   scrollTrigger: {
+    scroller: '.intro-container',
     trigger: '.forth-container',
     start: 'top 60%',
     end: '+=25%',
@@ -160,6 +172,7 @@ gsap.to('.training-3', {
 });
 gsap.to('.training-2', {
   scrollTrigger: {
+    scroller: '.intro-container',
     trigger: '.forth-container',
     start: 'top 60%',
     end: '+=20%',
@@ -173,6 +186,7 @@ gsap.to('.training-2', {
 });
 gsap.to('.training-4', {
   scrollTrigger: {
+    scroller: '.intro-container',
     trigger: '.forth-container',
     start: 'top 60%',
     end: '+=25%',
@@ -188,6 +202,7 @@ gsap.to('.training-4', {
 //you need
 gsap.to('.fifth-container', {
   scrollTrigger: {
+    scroller: '.intro-container',
     trigger: '.fifth-container',
     start: 'top 45%',
     end: '+=30%',
