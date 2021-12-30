@@ -75,6 +75,7 @@
 //     text-decoration: none;
 // }
 footer {
+  scroll-snap-align: center;
   position: relative;
   top: 5rem;
   width: 100%;
@@ -173,9 +174,9 @@ footer {
 
       a {
         display: grid;
-        grid-template-columns: 1fr 1fr 3fr 1fr;
+        grid-template-columns: 1fr 1fr 3fr;
         grid-template-rows: auto;
-        grid-template-areas: '. icon text .';
+        grid-template-areas: '. icon text ';
         font-size: 0.7rem;
         font-weight: 500;
         margin: 0.5rem;
@@ -186,6 +187,9 @@ footer {
         }
         span {
           grid-area: text;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
         }
       }
     }

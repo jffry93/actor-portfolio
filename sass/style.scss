@@ -11,6 +11,13 @@ body {
   color: white;
   background: black;
 }
+.main-scroll-snap {
+  position: relative;
+  top: 5rem;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  height: calc(100vh - 5rem);
+}
 
 .my-container {
   border: 3px solid red;
