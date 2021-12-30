@@ -1,47 +1,48 @@
 .resume-container {
+  min-height: 400px;
   position: relative;
   top: 5rem;
-  background: url(/src/img/jeshoots-com-pUAM5hPaCRI-unsplash.jpg);
+  height: calc(100vh - 5rem);
+  background: url('../img/jeshoots-com-pUAM5hPaCRI-unsplash.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  //border: 3px solid purple;
+  border: 3px solid purple;
 }
 .resume-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  row-gap: 2rem;
   background-color: rgba(0, 0, 0, 0.3);
-  //border: 3px solid yellow;
+  border: 3px solid yellow;
+  padding: 3rem 0;
+  height: 100%;
   .resume-title {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    //border: 3px solid brown;
-    padding: 3rem 0rem 2rem;
+    border: 3px solid brown;
+
     h1 {
       font-size: 2rem;
       text-transform: uppercase;
       font-weight: 700;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-      //border: 3px solid blue;
+      border: 3px solid blue;
     }
   }
 
   .resume-border {
-    width: 100%;
     max-width: 1400px;
     padding: 0 6rem;
-    //border: 3px solid green;
+    border: 3px solid green;
+    display: flex;
     img {
-      position: relative;
-      left: 50%;
-      transform: translate(-50%, 0%);
-      width: 100%;
+      height: calc(70vh - 5rem);
       object-fit: cover;
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
         0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
@@ -52,8 +53,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    //border: 3px solid red;
-    padding: 2rem 0rem 3rem;
+    border: 3px solid red;
+
     a {
       border: 3px solid white;
       padding: 0.5rem 3rem;

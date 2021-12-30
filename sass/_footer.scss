@@ -96,15 +96,15 @@ footer {
   row-gap: 2rem;
   grid-template-rows: auto;
   grid-template-areas:
-    'logo name name name'
-    'contact portfolio attribute social';
+    'logo none none none'
+    'attribute contact portfolio social';
   padding: 3rem 6rem 6rem;
   max-width: 1400px;
   margin: auto;
 
   .dqt {
     grid-area: logo;
-    //border: 3px solid red;
+    border: 3px solid red;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -126,7 +126,7 @@ footer {
   }
   .mdbb {
     grid-area: name;
-    //border: blue 3px solid;
+    border: blue 3px solid;
     display: flex;
     justify-content: flex-end;
     gap: 0.5rem;
@@ -159,7 +159,7 @@ footer {
   }
   .agency-info {
     grid-area: contact;
-    //border: 3px solid pink;
+    border: 3px solid pink;
     h4 {
       font-size: 0.9rem;
       font-weight: 700;
@@ -169,22 +169,30 @@ footer {
     .agent-contact {
       display: flex;
       flex-direction: column;
-      //border: 3px solid yellow;
+      border: 3px solid yellow;
 
       a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: '. icon text .';
         font-size: 0.7rem;
         font-weight: 500;
         margin: 0.5rem;
         svg {
+          grid-area: icon;
           margin: 0 0.5rem 0 0;
           width: 18px;
+        }
+        span {
+          grid-area: text;
         }
       }
     }
   }
   .footer-portfolio {
     grid-area: portfolio;
-    //border: 3px solid black;
+    border: 3px solid black;
     h4 {
       font-size: 0.9rem;
       font-weight: 700;
@@ -194,7 +202,7 @@ footer {
     .footer-portfolio-buttons {
       display: flex;
       flex-direction: column;
-      //border: 3px solid orange;
+      border: 3px solid orange;
       a {
         font-size: 0.7rem;
         font-weight: 500;
@@ -207,7 +215,7 @@ footer {
     grid-area: social;
     display: flex;
     flex-direction: column;
-    //border: 3px solid orange;
+    border: 3px solid orange;
     h4 {
       font-size: 0.9rem;
       font-weight: 700;
@@ -217,18 +225,26 @@ footer {
     .social-icons {
       display: flex;
       flex-direction: column;
-      //border: 3px solid green;
+      border: 3px solid green;
       a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr;
+        grid-template-rows: auto;
+        grid-template-areas: '. icon text ';
         font-size: 0.7rem;
         font-weight: 500;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
         margin: 0.5rem;
         svg {
+          grid-area: icon;
           width: 12px;
           margin: 0 0.5rem 0 0;
+        }
+        span {
+          text-transform: capitalize;
+          grid-area: text;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
         }
       }
     }
