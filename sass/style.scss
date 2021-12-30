@@ -14,7 +14,7 @@ body {
 .main-scroll-snap {
   position: relative;
   top: 5rem;
-  overflow-x: hidden;
+  overflow-y: scroll;
   scroll-snap-type: y mandatory;
   height: calc(100vh - 5rem);
 }

@@ -40,9 +40,10 @@
     }
   }
   //HOMEPAGE
+
   .intro-container {
-    position: relative;
     top: 7.4rem !important;
+    height: calc(100vh - 7.4rem);
   }
   .reel-container {
     top: 7.4rem !important;

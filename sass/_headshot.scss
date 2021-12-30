@@ -105,6 +105,8 @@
       }
     }
     .main-img-container {
+      width: auto;
+      height: auto;
       margin-bottom: 1rem;
       -webkit-animation: fadeinlarge 0.7s ease; /* Safari, Chrome and Opera > 12.1 */
       -moz-animation: fadeinlarge 0.7s ease; /* Firefox < 16 */
@@ -116,6 +118,8 @@
       .large-img {
         border: white 3px solid;
         height: 100%;
+        width: 100%;
+        object-fit: contain !important;
       }
     }
   }

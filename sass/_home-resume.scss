@@ -12,7 +12,6 @@
   border: 3px solid purple;
 }
 .resume-content {
-  max-width: 1400px;
   padding: 3rem 6rem;
   display: flex;
   flex-direction: column;
@@ -21,6 +20,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   border: 3px solid yellow;
   height: 100%;
+  width: 100%;
   .resume-title {
     margin-bottom: 0;
     text-align: center;
@@ -39,8 +39,10 @@
     min-height: 200px;
     max-height: calc(90vh - 15rem);
     img {
-      height: 100%;
-      object-fit: contain;
+      height: calc(80vh - 15rem);
+      min-height: 200px;
+      width: 100%;
+      object-fit: contain !important;
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
         0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     }
