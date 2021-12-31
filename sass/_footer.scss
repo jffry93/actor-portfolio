@@ -75,72 +75,46 @@
 //     text-decoration: none;
 // }
 footer {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   position: relative;
   top: 5rem;
   width: 100%;
   background-color: grey;
+
   h4 {
     margin: 0 0 2rem;
-    text-align: center;
+    text-align: start;
   }
   a {
     text-decoration: none;
     color: inherit;
-    text-align: center;
+    text-align: start;
   }
 }
 .footer-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 1rem;
-  row-gap: 2rem;
+  column-gap: 3rem;
+  row-gap: 6rem;
   grid-template-rows: auto;
-  grid-template-areas:
-    'logo none none none'
-    'contact portfolio social attribute';
-  padding: 3rem 6rem 6rem;
+  grid-template-areas: 'social contact portfolio attribute';
+  padding: 3rem 6rem 3rem;
   max-width: 1400px;
   margin: auto;
-
-  .dqt {
-    grid-area: logo;
-    //border: 3px solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    h2 {
-      letter-spacing: -1px;
-      text-transform: uppercase;
-    }
-    h3 {
-      letter-spacing: -2px;
-    }
-    h2,
-    h3 {
-      font-weight: 700;
-      font-style: italic;
-      line-height: 0.7;
-      text-shadow: 2px 2px 4px #5e5e5e;
-    }
-  }
-  .mdbb {
-    grid-area: name;
-    //border: blue 3px solid;
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.5rem;
-    h3 {
-      margin: 0;
-      font-weight: 500;
-      letter-spacing: -1px;
-    }
-  }
+  // border: 3px red solid;
+  //ANIMATION
+  -webkit-animation: fadeinlarge 1.3s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeinlarge 1.3s ease; /* Firefox < 16 */
+  -ms-animation: fadeinlarge 1.3s ease; /* Internet Explorer */
+  -o-animation: fadeinlarge 1.3s ease; /* Opera < 12.1 */
+  animation: loadin 1.6s ease;
   .player-info {
     grid-area: attribute;
+    // border: blue 3px solid;
+    cursor: default;
     h4 {
-      font-size: 0.9rem;
+      font-size: clamp(0.6rem, 5vw, 0.8rem);
       font-weight: 700;
       text-transform: uppercase;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -150,9 +124,8 @@ footer {
       flex-direction: column;
       font-size: 0.7rem;
       font-weight: 500;
-      margin: 0.5rem;
       .skill {
-        margin: 0 1rem 0 0;
+        margin: 0;
         display: flex;
         justify-content: space-between;
       }
@@ -160,29 +133,40 @@ footer {
   }
   .agency-info {
     grid-area: contact;
-    //border: 3px solid pink;
+    // border: 3px solid pink;
     h4 {
-      font-size: 0.9rem;
+      font-size: clamp(0.6rem, 5vw, 0.8rem);
       font-weight: 700;
       text-transform: uppercase;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      cursor: default;
     }
     .agent-contact {
       display: flex;
       flex-direction: column;
-      //border: 3px solid yellow;
-
+      // border: 3px solid yellow;
+      :first-child:hover {
+        color: white;
+        cursor: default;
+        span {
+          color: white;
+        }
+      }
+      :hover {
+        color: $primary-color;
+        text-decoration: none;
+      }
       a {
         display: grid;
-        grid-template-columns: 1fr 1fr 3fr;
+        grid-template-columns: 30px 3fr;
         grid-template-rows: auto;
-        grid-template-areas: '. icon text ';
+        grid-template-areas: ' icon text ';
         font-size: 0.7rem;
         font-weight: 500;
-        margin: 0.5rem;
+        margin: 0.5rem 0;
         svg {
           grid-area: icon;
-          margin: 0 0.5rem 0 0;
+
           width: 18px;
         }
         span {
@@ -196,22 +180,27 @@ footer {
   }
   .footer-portfolio {
     grid-area: portfolio;
-    //border: 3px solid black;
+    // border: 3px solid black;
     h4 {
-      font-size: 0.9rem;
+      font-size: clamp(0.6rem, 5vw, 0.8rem);
       font-weight: 700;
       text-transform: uppercase;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      cursor: default;
     }
     .footer-portfolio-buttons {
       display: flex;
       flex-direction: column;
-      //border: 3px solid orange;
+      // border: 3px solid orange;
+      :hover {
+        color: $primary-color;
+        text-decoration: none;
+      }
       a {
         font-size: 0.7rem;
         font-weight: 500;
         text-transform: capitalize;
-        margin: 0.5rem;
+        margin: 0.5rem 0;
       }
     }
   }
@@ -219,29 +208,35 @@ footer {
     grid-area: social;
     display: flex;
     flex-direction: column;
-    //border: 3px solid orange;
+    // border: 3px solid orange;
     h4 {
-      font-size: 0.9rem;
+      font-size: clamp(0.6rem, 5vw, 0.8rem);
       font-weight: 700;
       text-transform: uppercase;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      cursor: default;
     }
     .social-icons {
       display: flex;
       flex-direction: column;
-      //border: 3px solid green;
+      // border: 3px solid green;
+      width: 100%;
+      :hover {
+        color: $primary-color;
+        text-decoration: none;
+      }
       a {
         display: grid;
-        grid-template-columns: 1fr 1fr 3fr;
+        grid-template-columns: 30px 3fr;
         grid-template-rows: auto;
-        grid-template-areas: '. icon text ';
+        grid-template-areas: ' icon text ';
         font-size: 0.7rem;
         font-weight: 500;
-        margin: 0.5rem;
+        margin: 0.5rem 0;
+
         svg {
           grid-area: icon;
           width: 12px;
-          margin: 0 0.5rem 0 0;
         }
         span {
           text-transform: capitalize;
@@ -265,11 +260,26 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #222222;
+  cursor: default;
   p {
     font-size: 0.6rem;
     margin: 0;
+    //ANIMATION
+    -webkit-animation: loadin 1s ease; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: loadin 1s ease; /* Firefox < 16 */
+    -ms-animation: loadin 1s ease; /* Internet Explorer */
+    -o-animation: loadin 1s ease; /* Opera < 12.1 */
+    animation: loadin 1s ease;
     img {
       height: 1.5rem;
+    }
+    :hover {
+      color: white;
+      text-decoration: none;
+      cursor: default;
+    }
+    a {
+      cursor: default;
     }
   }
 }

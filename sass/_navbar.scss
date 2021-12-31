@@ -5,57 +5,75 @@ nav {
   min-height: 5rem;
   background: black;
   z-index: 10;
+  //border: 3px solid white;
   .nav-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     max-width: 1400px;
-    min-height: 5rem;
     margin: auto;
-    padding: 1rem 6rem;
+    padding: 0 6rem;
   }
+
   .logo {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
     cursor: pointer;
     text-decoration: none;
-  }
-  h2 {
-    color: white;
-    font-size: 2rem;
-    font-weight: 800;
-  }
-  .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    li {
-      color: white;
-      margin: 0 0 0 1rem;
-    }
-    .dropdown-menu {
-      position: absolute;
-      left: -20px !important;
-      background: black;
-      border-radius: 2%;
-      .active {
-        background-color: inherit;
-      }
-      a:hover,
-      a:focus {
-        background-color: $primary-color;
-        color: black;
-      }
-    }
+    //border: green 3px solid;
     a {
       color: white;
-      font-weight: 600;
-      font-size: 1rem;
-      &:hover,
-      &:focus {
-        color: $primary-color;
+      font-size: clamp(1.3rem, 5vw, 2rem);
+      font-weight: 800;
+    }
+    :hover {
+      text-decoration: none;
+    }
+  }
+  .menu {
+    //border: 3px solid yellow;
+    height: 5rem;
+    width: unset;
+    display: flex;
+    align-items: center;
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 0;
+      column-gap: 3rem;
+      li {
+        color: white;
+      }
+      .dropdown-menu {
+        position: absolute;
+        left: -20px !important;
+        background: black;
+        border-radius: 2%;
+        .active {
+          background-color: inherit;
+        }
+        a:hover,
+        a:focus {
+          background-color: $primary-color;
+          color: black;
+        }
+      }
+      a {
+        color: white;
+        font-weight: 600;
+        font-size: clamp(0.8rem, 5vw, 0.8rem);
+        &:hover,
+        &:focus {
+          color: $primary-color;
+        }
       }
     }
   }
+
   .active {
     color: $primary-color !important;
 
