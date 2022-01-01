@@ -98,6 +98,7 @@
   }
   .second-container {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,6 +134,7 @@
     }
   }
   .location-container {
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -161,18 +163,22 @@
       letter-spacing: 6px;
     }
   }
-  .third-container {
+  .experience-container {
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    transform: scale(3, 3);
-    opacity: 0;
-    h2,
-    h3 {
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    .experience-text {
+      transform: scale(3, 3);
       line-height: 1;
       text-shadow: 2px 2px 4px #5e5e5e;
       text-transform: capitalize;
+      opacity: 0;
     }
+
     h2 {
       font-weight: 700;
       font-size: clamp(3.2rem, 8vw, 8rem);
@@ -186,12 +192,15 @@
     }
   }
   .forth-container {
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     row-gap: 0.5rem;
     transform: translate(0%, 0%);
+    border: 3px solid yellow;
     .training-title {
       opacity: 0;
     }
