@@ -1,5 +1,6 @@
 //INTRO CONTAINER ANIMATION
 //Welcome Heading
+
 gsap.to('.welcome-1', {
   scrollTrigger: {
     scroller: '.intro-container',
@@ -8,7 +9,7 @@ gsap.to('.welcome-1', {
     end: '+=50%',
     pin: true,
     scrub: 1,
-    markers: true,
+    // markers: true,
     toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
 
@@ -69,7 +70,7 @@ gsap.to('.scroll-down', {
     end: '+=5%',
     scrub: true,
     pin: true,
-    markers: true,
+    // markers: true,
     toggleClass: { targets: '.scroll-down', class: 'flashing' },
     toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
@@ -86,7 +87,7 @@ gsap.to('.second-container', {
     start: 'top 80%',
     end: '+=30%',
     scrub: true,
-    //markers: true,
+    markers: true,
     toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
   x: 0,

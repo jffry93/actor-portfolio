@@ -2,7 +2,7 @@
   position: relative;
   top: 5rem;
   height: calc(100vh - 5rem);
-  border: yellow 3px solid;
+  // border: yellow 3px solid;
   width: 100%;
 }
 .headshot-container {
@@ -15,7 +15,7 @@
   max-width: 1400px;
   padding: 0 6rem;
   margin: auto;
-  border: red 3px solid;
+  // border: red 3px solid;
   .small-img-container {
     position: relative;
     display: flex;
@@ -28,7 +28,7 @@
     // -ms-animation: fadeinsmall 0.7s ease; /* Internet Explorer */
     // -o-animation: fadeinsmall 0.7s ease; /* Opera < 12.1 */
     animation: fadeinsmall 1s ease;
-    border: purple 3px solid;
+    // border: purple 3px solid;
     .small-img-border {
       //ANIMATION
       -webkit-animation: fadeinsmall 1.6s ease; /* Safari, Chrome and Opera > 12.1 */

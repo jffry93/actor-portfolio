@@ -5,7 +5,7 @@
   height: calc(100vh - 5rem);
   min-height: 400px;
   background: $primary-color;
-  border: 3px solid green;
+  // border: 3px solid green;
   display: flex;
   .reel-content {
     display: flex;
@@ -13,7 +13,7 @@
     justify-content: center;
     row-gap: 2rem;
     max-width: 1400px;
-    border: 3px solid yellow;
+    // border: 3px solid yellow;
     margin: auto;
     height: 100%;
     overflow: hidden;
@@ -22,7 +22,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 3px solid brown;
+      // border: 3px solid brown;
       padding: 3rem 0 0;
       //ANIMATION
       -webkit-animation: fadeinsmall 1s ease; /* Safari, Chrome and Opera > 12.1 */
@@ -36,7 +36,7 @@
         font-weight: 700;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         text-align: center;
-        border: 3px solid black;
+        // border: 3px solid black;
         margin: 0;
       }
     }
@@ -44,7 +44,7 @@
       min-height: 200px;
       width: 100%;
       padding: 0rem 6rem;
-      border: 3px solid purple;
+      // border: 3px solid purple;
       //ANIMATION
       -webkit-animation: fadeinlarge 1.3s ease; /* Safari, Chrome and Opera > 12.1 */
       -moz-animation: fadeinlarge 1.3s ease; /* Firefox < 16 */
@@ -57,7 +57,7 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      border: 3px solid blue;
+      // border: 3px solid blue;
       padding: 0 0 3rem;
       //ANIMATION
       -webkit-animation: fadeinsmall 1s ease; /* Safari, Chrome and Opera > 12.1 */
@@ -66,7 +66,7 @@
       -o-animation: fadeinsmall 1s ease; /* Opera < 12.1 */
       animation: fadeinsmall 1s ease;
       a {
-        border: 3px solid white;
+        // border: 3px solid white;
         padding: 0.5rem 3rem;
         font-size: clamp(0.5rem, 5vw, 0.8rem);
         text-transform: uppercase;

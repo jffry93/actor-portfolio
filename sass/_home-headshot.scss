@@ -42,7 +42,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid blue;
+  // border: 3px solid blue;
 
   .first-container {
     width: 100%;
@@ -53,11 +53,11 @@
     .intro-welcome {
       line-height: 0.8;
       text-align: start;
-      -webkit-animation: loadin 2s ease; /* Safari, Chrome and Opera > 12.1 */
-      -moz-animation: loadin 2s ease; /* Firefox < 16 */
-      -ms-animation: loadin 2s ease; /* Internet Explorer */
-      -o-animation: loadin 2s ease; /* Opera < 12.1 */
-      animation: loadin 2s ease;
+      // -webkit-animation: loadin 2s ease; /* Safari, Chrome and Opera > 12.1 */
+      // -moz-animation: loadin 2s ease; /* Firefox < 16 */
+      // -ms-animation: loadin 2s ease; /* Internet Explorer */
+      // -o-animation: loadin 2s ease; /* Opera < 12.1 */
+      // animation: loadin 2s ease;
       h1,
       h3 {
         text-shadow: 2px 2px 4px #5e5e5e;
@@ -78,6 +78,7 @@
       }
       .welcome-3 {
         color: $primary-color;
+        text-shadow: unset;
       }
     }
 
@@ -150,13 +151,14 @@
       span {
         color: inherit;
         font-weight: 500;
-        font-size: clamp(1.2rem, 3vw, 2.5rem);
         letter-spacing: 6px;
       }
     }
 
     .location-1 {
-      color: $primary-color;
+      font-weight: 500;
+      font-size: clamp(1.2rem, 3vw, 2.5rem);
+      letter-spacing: 6px;
     }
   }
   .third-container {

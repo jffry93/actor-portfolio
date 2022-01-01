@@ -9,7 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 3px solid purple;
+  // border: 3px solid purple;
 }
 .resume-content {
   display: flex;
@@ -17,14 +17,14 @@
   justify-content: center;
   row-gap: 2rem;
   background-color: rgba(0, 0, 0, 0.3);
-  border: 3px solid yellow;
+  // border: 3px solid yellow;
   height: 100%;
   width: 100%;
   overflow: hidden;
   .resume-title {
     margin-bottom: 0;
     text-align: center;
-    border: 3px solid brown;
+    // border: 3px solid brown;
     padding-top: 3rem;
     font-size: clamp(1.5rem, 5vw, 2rem);
     text-transform: uppercase;
@@ -39,7 +39,7 @@
   }
 
   .resume-border {
-    border: 3px solid green;
+    // border: 3px solid green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,8 +57,8 @@
       height: 100%;
       width: 100%;
       object-fit: contain !important;
-      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-        0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      //   0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     }
   }
   .download-resume {
@@ -66,7 +66,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    border: 3px solid red;
+    // border: 3px solid red;
     padding-bottom: 3rem;
     //ANIMATION
     -webkit-animation: fadeinsmall 1s ease; /* Safari, Chrome and Opera > 12.1 */

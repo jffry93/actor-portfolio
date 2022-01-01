@@ -2,6 +2,13 @@ $primary-color: #de3333;
 
 /*--This effects all btn-lg buttons on the page--*/
 
+//GSAP MARKER BUG
+.gsap-marker-end,
+.gsap-marker-start,
+.gsap-marker-scroller-end,
+.gsap-marker-scroller-start {
+  display: none !important;
+}
 .btn {
   border-radius: 0rem;
 }
