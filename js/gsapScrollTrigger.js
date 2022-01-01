@@ -8,7 +8,7 @@ gsap.to('.welcome-1', {
     start: 'center center',
     end: '+=50%',
     pin: true,
-    scrub: 1,
+    scrub: 0.2,
     // markers: true,
     toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
@@ -24,7 +24,7 @@ gsap.to('.welcome-2', {
     start: 'center center',
     end: '+=50%',
     pin: true,
-    scrub: 1,
+    scrub: 0.2,
     //markers: true,
     toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
@@ -39,7 +39,7 @@ gsap.to('.welcome-3', {
     start: 'center center',
     end: '+=50%',
     pin: true,
-    scrub: 1,
+    scrub: 0.2,
     // markers: true,
     toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
@@ -54,7 +54,7 @@ gsap.to('.welcome-4', {
     start: 'center center',
     end: '+=50%',
     pin: true,
-    scrub: 1,
+    scrub: 0.2,
     // markers: true,
     toggleActions: 'play pause reverse resume', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
@@ -80,125 +80,132 @@ gsap.to('.scroll-down', {
 
 //LANGUAGE-CONTAINER
 //billingual
-gsap.to('.second-container', {
-  scrollTrigger: {
-    scroller: '.intro-container',
-    trigger: '.second-container',
-    start: 'top 80%',
-    end: '+=30%',
-    scrub: true,
-    markers: true,
-    toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
-  },
-  x: 0,
-  //duration: 0.7,
-  opacity: 1,
-});
+gsap
+  .timeline({
+    scrollTrigger: {
+      scroller: '.intro-container',
+      trigger: '.second-container',
+      start: 'top center',
+      end: '+=100%',
+      scrub: 0.2,
+      // markers: true,
+      // pin: true,
+    },
+  })
+  .to('.second-container', { x: 0, opacity: 1 })
+  .to('.second-container', { x: 500, opacity: 0 });
 
 //LOCATION CONTAINER
-gsap.to('.location-container', {
-  scrollTrigger: {
-    scroller: '.intro-container',
-    trigger: '.location-container',
-    start: 'top 80%',
-    end: '+=30%',
-    scrub: true,
-    //markers: true,
-    toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
-  },
-  x: 0,
-  duration: 0.7,
-  opacity: 1,
-});
-
+gsap
+  .timeline({
+    scrollTrigger: {
+      scroller: '.intro-container',
+      trigger: '.location-container',
+      start: 'top center',
+      end: '+=100%',
+      scrub: 0.2,
+      // markers: true,
+      // pin: true,
+    },
+  })
+  .to('.location-container', { x: 0, opacity: 1 })
+  .to('.location-container', { x: -500, opacity: 0 });
 //EXPERIENCE CONTAINER
-gsap.to('.third-container', {
-  scrollTrigger: {
-    scroller: '.intro-container',
-    trigger: '.third-container',
-    start: 'top 45%',
-    end: '+=30%',
-    scrub: true,
-    //markers: true,
-    toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
-  },
-  x: 0,
-  duration: 0.7,
-  opacity: 1,
-  scaleX: 1,
-  scaleY: 1,
-});
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      scroller: '.intro-container',
+      trigger: '.experience-container',
+      start: 'top center',
+      end: '+=100%',
+      scrub: 0.2,
+      // markers: true,
+      // pin: true,
+    },
+  })
+  .to('.experience-text', {
+    opacity: 1,
+    scaleX: 1,
+    scaleY: 1,
+  })
+  .to('.experience-text', { opacity: 0, scaleX: 3, scaleY: 3 });
 
 //QUADRUPLE CONTAINER
-gsap.to('.training-title', {
-  scrollTrigger: {
-    scroller: '.intro-container',
-    trigger: '.forth-container',
-    start: 'top 60%',
-    end: '+=10%',
-    scrub: true,
-    //markers: true,
-    toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
-  },
+gsap
+  .timeline({
+    scrollTrigger: {
+      scroller: '.intro-container',
+      trigger: '.forth-container',
+      start: 'top center',
+      end: '+=50%',
+      scrub: 1,
+      markers: true,
+      // pin: true,
+    },
+  })
+  .to('.training-title', { opacity: 1 })
+  .to('.training-1', { x: 0, duration: 3, opacity: 1 })
+  .to('.training-2', { x: 0, duration: 3, opacity: 1 })
+  .to('.training-3', { x: 0, duration: 3, opacity: 1 })
+  .to('.training-4', { x: 0, duration: 3, opacity: 1 });
 
-  opacity: 1,
-});
-gsap.to('.training-1', {
-  scrollTrigger: {
-    scroller: '.intro-container',
-    trigger: '.forth-container',
-    start: 'top 60%',
-    end: '+=20%',
-    scrub: true,
-    //markers: true,
-    toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
-  },
-  x: 0,
-  duration: 0.7,
-  opacity: 1,
-});
-gsap.to('.training-3', {
-  scrollTrigger: {
-    scroller: '.intro-container',
-    trigger: '.forth-container',
-    start: 'top 60%',
-    end: '+=25%',
-    scrub: true,
-    //markers: true,
-    toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
-  },
-  x: 0,
-  duration: 0.7,
-  opacity: 1,
-});
-gsap.to('.training-2', {
-  scrollTrigger: {
-    scroller: '.intro-container',
-    trigger: '.forth-container',
-    start: 'top 60%',
-    end: '+=20%',
-    scrub: true,
-    //markers: true,
-    toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
-  },
-  x: 0,
-  duration: 0.7,
-  opacity: 1,
-});
-gsap.to('.training-4', {
-  scrollTrigger: {
-    scroller: '.intro-container',
-    trigger: '.forth-container',
-    start: 'top 60%',
-    end: '+=25%',
-    scrub: true,
-    //markers: true,
-    toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
-  },
-  x: 0,
-  duration: 0.7,
-  opacity: 1,
-});
+// gsap.to('.training-1', {
+//   scrollTrigger: {
+//     scroller: '.intro-container',
+//     trigger: '.forth-container',
+//     start: 'top 60%',
+//     end: '+=20%',
+//     scrub: true,
+//     //markers: true,
+//     toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
+//   },
+//   x: 0,
+//   duration: 0.7,
+//   opacity: 1,
+// });
+// gsap.to('.training-3', {
+//   scrollTrigger: {
+//     scroller: '.intro-container',
+//     trigger: '.forth-container',
+//     start: 'top 60%',
+//     end: '+=25%',
+//     scrub: true,
+//     //markers: true,
+//     toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
+//   },
+//   x: 0,
+//   duration: 0.7,
+//   opacity: 1,
+// });
+// gsap.to('.training-2', {
+//   scrollTrigger: {
+//     scroller: '.intro-container',
+//     trigger: '.forth-container',
+//     start: 'top 60%',
+//     end: '+=20%',
+//     scrub: true,
+//     //markers: true,
+//     toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
+//   },
+//   x: 0,
+//   duration: 0.7,
+//   opacity: 1,
+// });
+// gsap.to('.training-4', {
+//   scrollTrigger: {
+//     scroller: '.intro-container',
+//     trigger: '.forth-container',
+//     start: 'top 60%',
+//     end: '+=25%',
+//     scrub: true,
+//     //markers: true,
+//     toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
+//   },
+//   x: 0,
+//   duration: 0.7,
+//   opacity: 1,
+// });
 
 //you need
 gsap.to('.fifth-container', {
@@ -207,7 +214,7 @@ gsap.to('.fifth-container', {
     trigger: '.fifth-container',
     start: 'top 45%',
     end: '+=30%',
-    scrub: true,
+    scrub: 0.2,
     //markers: true,
     toggleActions: 'restart pause reverse reset', //PLAY PAUSE RESUME REVERSE RESTART RESET COMPLETE NONE
   },
