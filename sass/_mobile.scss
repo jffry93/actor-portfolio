@@ -134,7 +134,7 @@
 //small tablet screen
 @media (max-width: 599.98px) {
   .dropdown-menu {
-    transform: translate3d(0px, 33px, 0px) !important;
+    transform: translate3d(0px, 32px, 0px) !important;
   }
   .logo {
     height: 3rem !important;
@@ -145,16 +145,16 @@
   //RESIZE SPACING
   //HOMEPAGE
   .intro-container {
-    top: 7rem !important;
-    height: calc(100vh - 7rem) !important;
+    top: 5.5rem !important;
+    height: calc(100vh - 5.5rem) !important;
   }
   .intro-container {
-    top: 7rem !important;
-    height: calc(100vh - 7rem) !important;
+    top: 5.5rem !important;
+    height: calc(100vh - 5.5rem) !important;
   }
 
   .spacing {
-    height: calc(100vh - 7rem) !important;
+    height: calc(100vh - 5.5rem) !important;
   }
   //HEADSHOT PAGE
   .headshot-section {

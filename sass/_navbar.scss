@@ -5,7 +5,7 @@ nav {
   min-height: 5rem;
   background: black;
   z-index: 10;
-  //border: 3px solid white;
+  // border: 3px solid white;
   .nav-container {
     display: flex;
     flex-direction: row;
@@ -23,7 +23,7 @@ nav {
     width: 100%;
     cursor: pointer;
     text-decoration: none;
-    //border: green 3px solid;
+    // border: green 3px solid;
     a {
       color: white;
       font-size: clamp(1.3rem, 5vw, 2rem);
@@ -34,7 +34,7 @@ nav {
     }
   }
   .menu {
-    //border: 3px solid yellow;
+    // border: 3px solid yellow;
     height: 5rem;
     width: unset;
     display: flex;
