@@ -2,7 +2,7 @@
   min-height: 400px;
   position: relative;
   top: 5rem;
-  height: calc(100vh - 5rem);
+  height: calc((var(--vh, 1vh) * 100) - 5rem);
   width: 100%;
   background: url('../img/jeshoots-com-pUAM5hPaCRI-unsplash.jpg');
   background-attachment: fixed;

@@ -2,7 +2,7 @@
   scroll-snap-align: center;
   position: relative;
   top: 5rem;
-  height: calc(100vh - 5rem);
+  height: calc((var(--vh, 1vh) * 100) - 5rem);
   min-height: 400px;
   background: $primary-color;
   // border: 3px solid green;
@@ -66,7 +66,7 @@
       -o-animation: fadeinsmall 1s ease; /* Opera < 12.1 */
       animation: fadeinsmall 1s ease;
       a {
-        // border: 3px solid white;
+        border: 3px solid white;
         padding: 0.5rem 3rem;
         font-size: clamp(0.5rem, 5vw, 0.8rem);
         text-transform: uppercase;

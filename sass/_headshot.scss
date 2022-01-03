@@ -1,21 +1,21 @@
 .headshot-section {
   position: relative;
   top: 5rem;
-  height: calc(100vh - 5rem);
-  // border: yellow 3px solid;
+  height: calc((var(--vh, 1vh) * 100) - 5rem);
+  border: yellow 3px solid;
   width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  min-height: 450px;
 }
 .headshot-container {
   display: flex;
   gap: 1rem;
   justify-content: center;
-
-  height: 100%;
   width: 100%;
-  max-width: 1400px;
+  height: 100%;
   padding: 0 6rem;
-  margin: auto;
-  // border: red 3px solid;
+  border: red 3px solid;
   .small-img-container {
     position: relative;
     display: flex;
@@ -28,7 +28,7 @@
     // -ms-animation: fadeinsmall 0.7s ease; /* Internet Explorer */
     // -o-animation: fadeinsmall 0.7s ease; /* Opera < 12.1 */
     animation: fadeinsmall 1s ease;
-    // border: purple 3px solid;
+    border: purple 3px solid;
     .small-img-border {
       //ANIMATION
       -webkit-animation: fadeinsmall 1.6s ease; /* Safari, Chrome and Opera > 12.1 */
@@ -38,7 +38,7 @@
       animation: fadeinsmall 1.6s ease;
       //max-height: calc((100vh - 5rem) / 3);
       overflow: hidden;
-      border: white 3px solid;
+      border: red 3px solid;
       position: relative;
       height: 9rem;
       &:hover {
@@ -51,7 +51,7 @@
         flex-direction: column;
         justify-content: center;
         height: 100%;
-        //border: 3px solid pink;
+        border: 3px solid pink;
         .view-headshot-button,
         .download-headshot-button {
           display: flex;
@@ -114,7 +114,8 @@
     }
   }
   .main-img-container {
-    margin-bottom: 1rem;
+    max-height: 100%;
+    border: blue 3px solid;
     //ANIMATION
     -webkit-animation: fadeinlarge 1.3s ease; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadeinlarge 1.3s ease; /* Firefox < 16 */
