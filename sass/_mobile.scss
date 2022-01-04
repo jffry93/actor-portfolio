@@ -154,7 +154,7 @@
     }
     .main-img-container {
       // height: 100%;
-      border: blue 3px solid;
+      // border: blue 3px solid;
       //ANIMATION
       -webkit-animation: fadeinlarge 1.3s ease; /* Safari, Chrome and Opera > 12.1 */
       -moz-animation: fadeinlarge 1.3s ease; /* Firefox < 16 */
@@ -257,11 +257,15 @@
   .menu {
     height: 2rem;
     .navbar-nav {
-      column-gap: 2rem !important;
+      padding: 0 1rem !important;
+      column-gap: 2.5rem !important;
       a {
-        font-size: clamp(0.7rem, 100vw, 0.8rem) !important;
+        font-size: clamp(0.5rem, 1vw, 0.8rem) !important;
       }
     }
+  }
+  a.dropdown-item {
+    padding: 0.45rem 1.5rem !important;
   }
 
   // nav {

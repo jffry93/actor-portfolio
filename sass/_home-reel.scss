@@ -24,6 +24,7 @@
       justify-content: center;
       // border: 3px solid brown;
       padding: 3rem 0 0;
+      letter-spacing: 1px;
       //ANIMATION
       -webkit-animation: fadeinsmall 1s ease; /* Safari, Chrome and Opera > 12.1 */
       -moz-animation: fadeinsmall 1s ease; /* Firefox < 16 */
@@ -72,7 +73,7 @@
         text-transform: uppercase;
         font-weight: 600;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        letter-spacing: -1px;
+        letter-spacing: 3px;
         color: white;
         background-color: grey;
       }

@@ -3,7 +3,7 @@
 }
 
 .intro-container {
-  border: 2px solid red;
+  // border: 2px solid red;
   //position: sticky;
   top: 5rem;
   scroll-snap-align: center;
@@ -19,7 +19,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   .background-overlay {
-    border: 3px solid purple;
+    // border: 3px solid purple;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 100;
@@ -37,7 +37,7 @@
   max-width: 1400px;
   margin: auto;
   padding: 0 9rem;
-  border: 3px solid green;
+  // border: 3px solid green;
   span {
     color: $primary-color;
     text-shadow: none;
@@ -52,7 +52,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid blue;
+  // border: 3px solid blue;
 
   .first-container {
     width: 100%;
@@ -62,7 +62,7 @@
     justify-content: center;
     .intro-welcome {
       line-height: 0.8;
-      text-align: start;
+      text-align: center;
       // -webkit-animation: loadin 2s ease; /* Safari, Chrome and Opera > 12.1 */
       // -moz-animation: loadin 2s ease; /* Firefox < 16 */
       // -ms-animation: loadin 2s ease; /* Internet Explorer */
@@ -172,6 +172,9 @@
       font-size: clamp(1rem, 3vw, 2.5rem);
       letter-spacing: 6px;
     }
+    .location-2 {
+      text-transform: uppercase;
+    }
   }
   .experience-container {
     height: 100%;
@@ -185,7 +188,7 @@
       transform: scale(3, 3);
       line-height: 1;
       text-shadow: 2px 2px 4px #5e5e5e;
-      text-transform: capitalize;
+      //text-transform: uppercase;
       opacity: 0;
     }
 
@@ -193,12 +196,12 @@
       font-weight: 700;
       font-size: clamp(2.5rem, 8vw, 8rem);
       letter-spacing: -1px;
+      text-transform: uppercase;
     }
     h3 {
       font-weight: 600;
       font-size: clamp(1rem, 3vw, 2.5rem);
       letter-spacing: 6px;
-      color: $primary-color;
     }
   }
   .forth-container {

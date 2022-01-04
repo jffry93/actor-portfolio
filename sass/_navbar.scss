@@ -25,9 +25,11 @@ nav {
     text-decoration: none;
     // border: green 3px solid;
     a {
+      letter-spacing: 1px;
       color: white;
-      font-size: clamp(1.3rem, 5vw, 2rem);
+      font-size: clamp(1rem, 6vw, 2.4rem);
       font-weight: 800;
+      white-space: nowrap;
     }
     :hover {
       text-decoration: none;
@@ -63,9 +65,10 @@ nav {
         }
       }
       a {
+        letter-spacing: 3px;
         color: white;
         font-weight: 600;
-        font-size: clamp(0.8rem, 5vw, 0.8rem);
+        font-size: clamp(0.65rem, 1vw, 0.8rem);
         &:hover,
         &:focus {
           color: $primary-color;

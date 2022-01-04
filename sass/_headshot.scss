@@ -2,7 +2,7 @@
   position: relative;
   top: 5rem;
   height: calc((var(--vh, 1vh) * 100) - 5rem);
-  border: yellow 3px solid;
+  // border: yellow 3px solid;
   width: 100%;
   max-width: 1400px;
   margin: auto;
@@ -15,7 +15,7 @@
   width: 100%;
   height: 100%;
   padding: 0 6rem;
-  border: red 3px solid;
+  // border: red 3px solid;
   .small-img-container {
     position: relative;
     display: flex;
@@ -28,7 +28,7 @@
     // -ms-animation: fadeinsmall 0.7s ease; /* Internet Explorer */
     // -o-animation: fadeinsmall 0.7s ease; /* Opera < 12.1 */
     animation: fadeinsmall 1s ease;
-    border: purple 3px solid;
+    // border: purple 3px solid;
     .small-img-border {
       //ANIMATION
       -webkit-animation: fadeinsmall 1.6s ease; /* Safari, Chrome and Opera > 12.1 */
@@ -38,20 +38,16 @@
       animation: fadeinsmall 1.6s ease;
       //max-height: calc((100vh - 5rem) / 3);
       overflow: hidden;
-      border: red 3px solid;
+      border: white 3px solid;
       position: relative;
       height: 9rem;
-      &:hover {
-        .small-img {
-          opacity: 1;
-        }
-      }
+
       .headshot-buttons-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 100%;
-        border: 3px solid pink;
+        // border: 3px solid pink;
         .view-headshot-button,
         .download-headshot-button {
           display: flex;
@@ -64,22 +60,35 @@
           align-items: center;
           justify-content: center;
           overflow: hidden;
+
           //padding: 2rem 3rem;
+
           h4 {
-            font-size: clamp(0.6rem, 1.5vw, 0.9rem);
+            font-size: clamp(0.45rem, 1vw, 0.7rem);
             text-transform: uppercase;
             font-weight: 600;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            letter-spacing: -1px;
+            letter-spacing: 3px;
             -webkit-user-select: none; /* Safari */
             -moz-user-select: none; /* Firefox */
             -ms-user-select: none; /* IE10+/Edge */
             user-select: none; /* Standard */
+            margin: 0;
           }
           .small-img {
             position: absolute;
             width: 100%;
             opacity: 0.3;
+          }
+          &:hover {
+            h4 {
+              color: white;
+              z-index: 2;
+            }
+            .small-img {
+              opacity: 0.9;
+              z-index: 1;
+            }
           }
         }
         .download-headshot-button {
@@ -87,14 +96,15 @@
           background-color: grey;
           color: white;
           z-index: 1;
-          border: white 3px solid;
+          border-top: white 3px solid;
           text-decoration: none;
+
           h4 {
-            font-size: clamp(0.6rem, 1.5vw, 0.9rem);
+            font-size: clamp(0.45rem, 1vw, 0.7rem);
             text-transform: uppercase;
             font-weight: 600;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            letter-spacing: -1px;
+            letter-spacing: 3px;
             margin: auto;
             padding: 0.5rem;
             -webkit-user-select: none; /* Safari */
@@ -102,20 +112,28 @@
             -ms-user-select: none; /* IE10+/Edge */
             user-select: none; /* Standard */
           }
+          &:hover {
+            background-color: $primary-color;
+          }
         }
       }
     }
     .active {
       //border: 1em white solid;
-
-      img {
-        opacity: 0.9 !important;
+      color: $primary-color;
+      &:hover {
+        h4 {
+          color: $primary-color !important;
+        }
+        .small-img {
+          opacity: 0.3 !important;
+        }
       }
     }
   }
   .main-img-container {
     max-height: 100%;
-    border: blue 3px solid;
+    // border: blue 3px solid;
     //ANIMATION
     -webkit-animation: fadeinlarge 1.3s ease; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadeinlarge 1.3s ease; /* Firefox < 16 */
