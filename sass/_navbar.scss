@@ -36,7 +36,7 @@ nav {
     }
   }
   .menu {
-    // border: 3px solid yellow;
+    border: 3px solid yellow;
     height: 5rem;
     width: unset;
     display: flex;
@@ -46,15 +46,19 @@ nav {
       flex-direction: row;
       justify-content: flex-end;
       padding: 0;
-      column-gap: 3rem;
+      // column-gap: 3rem;
       li {
         color: $off-white;
+        margin-left: clamp(2.5rem, 5vw, 4rem);
         .active {
           &:hover,
           &:focus {
             color: $primary-color !important;
           }
         }
+      }
+      li:first-child {
+        margin-left: 0rem;
       }
       .dropdown-toggle {
         &:hover {

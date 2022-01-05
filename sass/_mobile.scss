@@ -147,9 +147,17 @@
     .small-img-container {
       flex-direction: row !important;
       height: unset !important;
+      margin-right: 0 !important;
       .small-img-border {
         flex: 1;
         height: 5rem !important;
+        margin-top: 0rem !important;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+      }
+      .small-img-border:first-child {
+        margin-top: 0rem !important;
+        margin-left: 0 !important;
       }
     }
     .main-img-container {
@@ -227,7 +235,7 @@
     top: 5.5rem !important;
     height: calc((var(--vh, 1vh) * 100) - 5.5rem) !important;
     .resume-content {
-      row-gap: 1rem !important;
+      // row-gap: 1rem !important;
       .resume-title {
         padding-top: 2rem !important;
       }
@@ -258,7 +266,7 @@
     height: 2rem;
     .navbar-nav {
       padding: 0 1rem !important;
-      column-gap: 2.5rem !important;
+      // column-gap: 2.5rem !important;
       a {
         font-size: clamp(0.5rem, 1vw, 0.8rem) !important;
       }

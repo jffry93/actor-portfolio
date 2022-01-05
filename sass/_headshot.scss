@@ -14,7 +14,7 @@
   top: 5rem;
   height: calc((var(--vh, 1vh) * 100) - 5rem);
   display: flex;
-  gap: 1rem;
+  // gap: 1rem;
   justify-content: center;
   width: 100%;
   padding: 0 6rem;
@@ -22,7 +22,7 @@
   .small-img-container {
     position: relative;
     display: flex;
-    gap: 1rem;
+    margin-right: 1rem;
     flex-direction: column;
     min-width: 160px;
 
@@ -44,6 +44,7 @@
       border: $off-white 3px solid;
       position: relative;
       height: 9rem;
+      margin-top: 1rem;
 
       .headshot-buttons-container {
         display: flex;
@@ -121,6 +122,9 @@
           }
         }
       }
+    }
+    .small-img-border:first-child {
+      margin-top: 0rem;
     }
     .active {
       h4 {
