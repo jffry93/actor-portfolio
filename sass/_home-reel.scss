@@ -1,22 +1,22 @@
-.reel-container {
-  position: relative;
-  top: 5rem;
-  height: calc((var(--vh, 1vh) * 100) - 5rem);
-  min-height: 400px;
+.reel-background-image {
   background: url('../img/reel-first-draft.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.reel-background-overlay {
+  background-color: rgba(0, 0, 0, 0.777);
+}
+
+.reel-container {
+  position: relative;
+  top: 5rem;
+  height: calc((var(--vh, 1vh) * 100) - 5rem);
+  min-height: 400px;
 
   // z-index: 2;
   // border: 3px solid green;
-  .reel-overlay {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.777);
-  }
 
   .reel-content {
     display: flex;

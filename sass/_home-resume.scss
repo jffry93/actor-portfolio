@@ -1,3 +1,14 @@
+.resume-background-image {
+  background: url('../img/jeshoots-com-pUAM5hPaCRI-unsplash.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.resume-background-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .resume-container {
   display: flex;
   min-height: 400px;
@@ -5,11 +16,6 @@
   top: 5rem;
   height: calc((var(--vh, 1vh) * 100) - 5rem);
   width: 100%;
-  background: url('../img/jeshoots-com-pUAM5hPaCRI-unsplash.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   // border: 3px solid purple;
 }
 .resume-content {
@@ -17,7 +23,6 @@
   flex-direction: column;
   justify-content: center;
   // row-gap: 2rem;
-  background-color: rgba(0, 0, 0, 0.3);
   // border: 3px solid yellow;
   height: 100%;
   width: 100%;
