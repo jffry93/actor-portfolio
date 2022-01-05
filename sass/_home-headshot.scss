@@ -6,7 +6,7 @@
   // border: 2px solid red;
   //position: sticky;
   top: 5rem;
-  scroll-snap-align: center;
+  // scroll-snap-align: center;
   width: 100%;
   background-image: url('../img/headshots/delbelheadshot.jpg');
   overflow-x: hidden;
@@ -53,6 +53,12 @@
   justify-content: center;
   align-items: center;
   // border: 3px solid blue;
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $off-white;
+  }
 
   .first-container {
     width: 100%;

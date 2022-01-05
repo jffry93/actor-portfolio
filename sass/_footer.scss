@@ -75,8 +75,6 @@
 //     text-decoration: none;
 // }
 footer {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   position: relative;
   top: 5rem;
   width: 100%;
@@ -86,13 +84,16 @@ footer {
     margin: 0 0 2rem;
     text-align: start;
     letter-spacing: 1px;
+    font-size: clamp(0.6rem, 1vw, 0.7rem);
+    color: $off-white;
   }
   a {
     text-decoration: none;
-    color: inherit;
+    color: $off-white;
     text-align: start;
     letter-spacing: 3px;
     line-height: 1rem;
+    font-size: clamp(0.5rem, 1vw, 0.6rem);
   }
 }
 .footer-content {
@@ -101,7 +102,7 @@ footer {
   column-gap: 3rem;
   row-gap: 6rem;
   grid-template-rows: auto;
-  grid-template-areas: 'social contact portfolio attribute';
+  grid-template-areas: 'contact social portfolio attribute';
   padding: 3rem 6rem 3rem;
   max-width: 1400px;
   margin: auto;
@@ -117,17 +118,18 @@ footer {
     // border: blue 3px solid;
     cursor: default;
     h4 {
-      font-size: clamp(0.6rem, 5vw, 0.8rem);
+      font-size: clamp(0.6rem, 1vw, 0.7rem);
       font-weight: 700;
       text-transform: uppercase;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
     .skill-list {
+      color: $off-white;
       position: relative;
       top: 7px;
       display: flex;
       flex-direction: column;
-      font-size: 0.7rem;
+      font-size: clamp(0.5rem, 1vw, 0.6rem);
       font-weight: 500;
       letter-spacing: 3px;
       line-height: 1rem;
@@ -142,7 +144,6 @@ footer {
     grid-area: contact;
     // border: 3px solid pink;
     h4 {
-      font-size: clamp(0.6rem, 5vw, 0.8rem);
       font-weight: 700;
       text-transform: uppercase;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -153,10 +154,10 @@ footer {
       flex-direction: column;
       // border: 3px solid yellow;
       :first-child:hover {
-        color: white;
+        color: $off-white;
         cursor: default;
         span {
-          color: white;
+          color: $off-white;
         }
       }
       :hover {
@@ -168,12 +169,11 @@ footer {
         grid-template-columns: 30px 3fr;
         grid-template-rows: auto;
         grid-template-areas: ' icon text ';
-        font-size: 0.7rem;
         font-weight: 500;
         margin: 0.5rem 0;
         svg {
           grid-area: icon;
-
+          color: $off-white;
           width: 18px;
         }
         span {
@@ -181,12 +181,15 @@ footer {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
+          color: $off-white;
         }
       }
       .agent-address {
-        span {
+        svg {
           position: relative;
-          top: -5px;
+          top: 5px;
+        }
+        span {
           line-height: 1.5rem;
         }
       }
@@ -196,7 +199,6 @@ footer {
     grid-area: portfolio;
     // border: 3px solid black;
     h4 {
-      font-size: clamp(0.6rem, 5vw, 0.8rem);
       font-weight: 700;
       text-transform: uppercase;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -211,7 +213,6 @@ footer {
         text-decoration: none;
       }
       a {
-        font-size: 0.7rem;
         font-weight: 500;
         text-transform: capitalize;
         margin: 0.5rem 0;
@@ -224,7 +225,6 @@ footer {
     flex-direction: column;
     // border: 3px solid orange;
     h4 {
-      font-size: clamp(0.6rem, 5vw, 0.8rem);
       font-weight: 700;
       text-transform: uppercase;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -244,7 +244,6 @@ footer {
         grid-template-columns: 30px 3fr;
         grid-template-rows: auto;
         grid-template-areas: ' icon text ';
-        font-size: 0.7rem;
         font-weight: 500;
         margin: 0.5rem 0;
 
@@ -276,6 +275,7 @@ footer {
   background-color: #222222;
   cursor: default;
   p {
+    color: $off-white;
     letter-spacing: 3px;
     line-height: 1rem;
     font-size: 0.6rem;
@@ -290,7 +290,7 @@ footer {
       height: 1.5rem;
     }
     :hover {
-      color: white;
+      color: $off-white;
       text-decoration: none;
       cursor: default;
     }

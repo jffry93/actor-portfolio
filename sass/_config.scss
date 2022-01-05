@@ -1,4 +1,5 @@
-$primary-color: #de3333;
+$primary-color: #bd0c23;
+$off-white: #eeeeee;
 
 /*--This effects all btn-lg buttons on the page--*/
 
@@ -9,6 +10,16 @@ $primary-color: #de3333;
 .gsap-marker-scroller-start {
   display: none !important;
 }
+
+.scroll-snap-container {
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+}
+.scroll-snap-start {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
 .btn {
   border-radius: 0rem;
 }

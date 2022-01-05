@@ -26,8 +26,8 @@ nav {
     // border: green 3px solid;
     a {
       letter-spacing: 1px;
-      color: white;
-      font-size: clamp(1rem, 6vw, 2.4rem);
+      color: $off-white;
+      font-size: clamp(1rem, 6vw, 2.3rem);
       font-weight: 800;
       white-space: nowrap;
     }
@@ -48,7 +48,18 @@ nav {
       padding: 0;
       column-gap: 3rem;
       li {
-        color: white;
+        color: $off-white;
+        .active {
+          &:hover,
+          &:focus {
+            color: $primary-color !important;
+          }
+        }
+      }
+      .dropdown-toggle {
+        &:hover {
+          color: $primary-color !important;
+        }
       }
       .dropdown-menu {
         position: absolute;
@@ -57,16 +68,19 @@ nav {
         border-radius: 2%;
         .active {
           background-color: inherit;
+          &:hover {
+            color: $off-white !important;
+          }
         }
         a:hover,
         a:focus {
           background-color: $primary-color;
-          color: black;
+          color: $off-white;
         }
       }
       a {
         letter-spacing: 3px;
-        color: white;
+        color: $off-white;
         font-weight: 600;
         font-size: clamp(0.65rem, 1vw, 0.8rem);
         &:hover,
@@ -82,7 +96,7 @@ nav {
 
     &:hover,
     &:focus {
-      color: white !important;
+      color: $off-white !important;
     }
   }
 }

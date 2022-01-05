@@ -19,12 +19,13 @@
     overflow: hidden;
 
     .reel-title {
+      color: $off-white;
       display: flex;
       align-items: center;
       justify-content: center;
       // border: 3px solid brown;
       padding: 3rem 0 0;
-      letter-spacing: 1px;
+
       //ANIMATION
       -webkit-animation: fadeinsmall 1s ease; /* Safari, Chrome and Opera > 12.1 */
       -moz-animation: fadeinsmall 1s ease; /* Firefox < 16 */
@@ -37,6 +38,8 @@
         font-weight: 700;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         text-align: center;
+        letter-spacing: 1px;
+        line-height: 0.7;
         // border: 3px solid black;
         margin: 0;
       }
@@ -67,15 +70,22 @@
       -o-animation: fadeinsmall 1s ease; /* Opera < 12.1 */
       animation: fadeinsmall 1s ease;
       a {
-        border: 3px solid white;
+        border: 3px solid $off-white;
         padding: 0.5rem 3rem;
         font-size: clamp(0.5rem, 5vw, 0.8rem);
         text-transform: uppercase;
         font-weight: 600;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         letter-spacing: 3px;
-        color: white;
+        color: $off-white;
         background-color: grey;
+      }
+      &:hover {
+        a {
+          text-decoration: none;
+          background-color: $primary-color;
+          // border: 3px solid $primary-color;
+        }
       }
     }
   }
