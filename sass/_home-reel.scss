@@ -1,21 +1,32 @@
 .reel-container {
-  scroll-snap-align: center;
   position: relative;
   top: 5rem;
   height: calc((var(--vh, 1vh) * 100) - 5rem);
   min-height: 400px;
-  background: $primary-color;
+  background: url('../img/reel-first-draft.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // z-index: 2;
   // border: 3px solid green;
-  display: flex;
+  .reel-overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.777);
+  }
+
   .reel-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 2rem;
-    max-width: 1400px;
+    width: 100%;
     // border: 3px solid yellow;
     margin: auto;
-    height: 100%;
+    // height: 100%;
     overflow: hidden;
 
     .reel-title {
@@ -47,6 +58,8 @@
     .homepage-reel {
       min-height: 200px;
       width: 100%;
+      margin: auto;
+      max-width: 1400px;
       padding: 0rem 6rem;
       // border: 3px solid purple;
       //ANIMATION
@@ -78,7 +91,7 @@
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         letter-spacing: 3px;
         color: $off-white;
-        background-color: grey;
+        background-color: $first-grey;
       }
       &:hover {
         a {

@@ -78,7 +78,7 @@ footer {
   position: relative;
   top: 5rem;
   width: 100%;
-  background-color: grey;
+  background-color: $first-grey;
 
   h4 {
     margin: 0 0 2rem;
@@ -272,7 +272,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #222222;
+  background-color: #000000;
   cursor: default;
   p {
     color: $off-white;
