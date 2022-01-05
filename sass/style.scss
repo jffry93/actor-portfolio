@@ -12,17 +12,17 @@ body {
   //min-height: 100vh;
   //min-height: -webkit-fill-available;
   height: calc(var(--vh, 1vh) * 100);
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: 'Montserrat', sans-serif;
   color: white;
   background: black;
 }
 .main-scroll-snap {
   position: relative;
-  top: 5rem;
+  // top: 5rem;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  height: calc(100vh - 5rem);
+  height: calc(var(--vh, 1vh) * 100);
 }
 //ANIMATIONS
 @keyframes fadein {

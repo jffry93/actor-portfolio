@@ -26,6 +26,7 @@
     color: $off-white;
     margin-bottom: 0;
     text-align: center;
+
     // border: 3px solid brown;
     padding-top: 3rem;
     font-size: clamp(1.5rem, 5vw, 2rem);
@@ -66,8 +67,6 @@
       width: 100%;
       max-width: 1400px;
       object-fit: contain !important;
-      // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-      //   0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     }
   }
   .download-resume {
